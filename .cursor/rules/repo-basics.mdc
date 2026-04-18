@@ -1,0 +1,26 @@
+---
+description: Battle bots monorepo basics (KiCad, layout, scope)
+alwaysApply: true
+---
+
+# Repo context
+
+This repository holds **multiple** Plastic Antweight / SPARC-oriented combat robots and **accessories** (software, firmware, PCBs, CAD, 3D prints, documentation).
+
+## PCB
+
+- Design PCBs in **KiCad** (`.kicad_pro`, schematics, layouts).
+- Prefer **per-project** boards under `bots/<name>/` or `accessories/<name>/`; put **reusable** symbols, footprints, and 3D models under `shared/kicad-libraries/`.
+
+## Layout
+
+- **Bots**: `bots/<robot-name>/`
+- **Accessories / side projects**: `accessories/<project-name>/`
+- **Shared assets**: `shared/` (libraries, templates, cross-project tools)
+- **General docs**: `docs/` (reference vs build notes)
+
+When adding new work, pick the smallest folder that fits; avoid dumping unrelated files at repo root unless they are top-level specs or launch helpers.
+
+## Changes
+
+Keep new structure consistent with the README; split reusable pieces into `shared/` instead of duplicating under every bot.

@@ -1,0 +1,17 @@
+# KiCad local/session artifacts
+fp-info-cache
+*.kicad_prl
+*.lck
+
+# Common generated autorouter interchange files
+*.dsn
+*.ses
+
+# Temporary/editor artifacts
+*.tmp
+*.swp
+*.swo
+*~
+
+# Optional local MCP clone if added later:
+# tools/KiCAD-MCP-Server/

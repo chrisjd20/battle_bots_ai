@@ -1,174 +1,277 @@
-Your concept is good, but I’d change the goal a little: at `1 lb / 454 g`, the best version of this is not a tiny “launch them across the arena” flipper. The best version is a low, fast, durable four-way **control flipper** that can attack from any side, self-right instantly, and keep cycling without breaking. That is much more likely to actually work.
+# BATTLE_BOT1
 
-I’m also assuming a normal plastic-ant interpretation where the structure/armor is plastic, but you can still use normal motors, fasteners, shafts, and electronics. If your local event is stricter than that, the materials need a second pass.
+This is the `1 lb / 454 g` optimized version of the concept.
 
-## Review Of The Earlier Plan
-The other AI got one big thing right: skip `CO2`. A four-way pneumatic system at this weight is almost all packaging pain and very little payoff.
+The earlier direction had the right idea, but it was not fully weight-optimized yet. At this class, the winning bot is not a tiny high-throw launcher. It is a **low, compact, durable four-way control flipper** that can attack from any side, self-right instantly, and keep working after repeated hits.
 
-Where I think it went wrong:
+This plan assumes a normal plastic-ant interpretation: plastic structure and armor, with normal motors, electronics, shafts, and fasteners still allowed. If your event is stricter, re-check materials before locking anything in.
 
-- The `Pico/custom PCB` idea is cool, but it is not the first problem you need to solve.
-- The real first problems are ground game, control mapping, servo survival, current spikes, and making sure the bot still works after a few hits.
-- A true regular octagon is not the best shape. You want **four large weapon faces** and **four small corner pods**, not eight equal sides.
-- Four totally independent flippers sound awesome until you are upside down, rotated, stressed, and trying to remember which switch fires which side.
+## 1 lb Verdict
 
-So the servo direction is right, but the architecture should be simpler and more arena-practical.
+The original concept was close, but not truly optimized for `454 g` because it still spent too much complexity on independence and not enough on packaging.
 
-## The Bot I Would Actually Build
-If I were making the “ultimate” version of your idea, I’d build a **chamfered-square tumbleweed flipper**. Picture a square with clipped corners, not a pure octagon.
+The biggest changes for a serious `1 lb` version are:
 
-The four main faces are your flipper plates. The four little 45-degree corners are wheel/armor pods.
+- stop thinking in terms of a huge flip
+- optimize for **ground game, control, and recovery**
+- pair opposite weapon faces into **2 weapon axes**
+- build around a strict weight budget from day one
+- keep electronics simple and proven for `v1`
 
-My main design choice would be:
+## The Best 1 lb Version
 
-- **4 flipper plates**
-- **4 local servos, one per plate**
-- But the servos are **paired by opposite sides** for control
+If I were optimizing this concept specifically for `1 lb`, I would build a **chamfered-square tumbleweed control flipper**:
 
-So front and rear are on one weapon channel, and left and right are on another. That gives you the reliability and simple packaging of one servo per plate, while keeping the controls sane.
+- four active flipper faces
+- four short corner drive pods
+- four-wheel drive
+- two central weapon servos
+- each servo drives one pair of opposite flippers
 
-That is the key change I’d make.
+So you still keep the four-sided identity, but you stop paying the full weight and power penalty of four independent weapon channels.
 
-Why I like that better than either pneumatics or a custom MCU-first build:
+That is the biggest improvement.
 
-- Each flipper has a short, direct, protected linkage.
-- You only need **2 weapon buttons**, not 4.
-- If one servo dies, you only lose one face, not the whole axis.
-- The center of the bot stays open for battery and electronics.
-- It still fully preserves the “four flipper” identity.
+## Why 2 Weapon Axes Beats 4 Independent Flippers
 
-## How I’d Spec It
-I’d aim for a robot that wins by **always being able to get under something**, not by a single giant toss.
+At `1 lb`, full independence sounds cooler than it is useful.
 
-### Shape
-- A chamfered square, not a true octagon.
-- Four long active sides.
-- Four short corner pods for wheels and impact protection.
-- Slightly crowned top and bottom so if it lands awkwardly, it rolls into a recoverable angle instead of sitting dead-flat.
+Two paired axes is better because it:
 
-### Weapon Style
-- Each side gets a **low scoop-flipper**, not a tall door.
-- The closed position should already look like a shallow wedge.
-- The open position only needs to travel far enough to upset, lift, and roll opponents, not swing huge.
-- Think “snap-lifter” more than “catapult.”
+- saves weight over four weapon servos
+- reduces BEC load and brownout risk
+- keeps the center of the robot available for battery and wiring
+- simplifies driving under match stress
+- still lets the bot attack and self-right from any orientation
 
-### Actuation
-- `4x` fast metal-gear HV micro servos is a good direction.
-- I would not drive the plate directly off the servo horn.
-- I would use a short pushrod or bellcrank with a **hard mechanical stop**.
-- I would set the closed position slightly **over-center** so impacts push the flipper tighter shut instead of back-driving the gears.
+Control layout should be:
 
-That last point matters a lot. Tiny servo geartrains die from shock, not from lack of theoretical torque.
+- standard tank drive
+- one momentary input for `front + rear`
+- one momentary input for `left + right`
 
-### Drive
-For this concept, I actually do like `4WD`, because the corners are the clean place to put the wheels.
+That is much more realistic in an actual fight than four separate weapon controls.
 
-I’d do:
+## Shape And Packaging
+
+Do **not** build a true regular octagon.
+
+Build a **square with clipped corners**:
+
+- four long weapon faces
+- four short corner pods for wheels and impact protection
+- slightly crowned top and bottom so the robot rolls into a recoverable attitude instead of landing dead-flat
+
+Target envelope:
+
+- about `90 to 95 mm` square overall
+- about `26 to 30 mm` tall
+- as low as possible with the battery centered near the floor
+
+The robot should look low and dense, not dramatic or tall.
+
+## Weapon Geometry
+
+Each active face should be a **low scoop-flipper**, not a vertical door.
+
+The right motion is:
+
+- closed position already forms a shallow wedge
+- open position travels only far enough to lift, upset, and roll an opponent
+- fast reset matters more than total throw
+
+Think:
+
+- **snap-lifter**
+- **control flipper**
+- **wheel-pop and turnover tool**
+
+Not:
+
+- catapult
+- big theatrical launch
+
+## Weapon Mechanism
+
+The `1 lb` optimized mechanism is:
+
+- `2x` stronger metal-gear weapon servos in the center
+- `2x` lightweight cross-shafts, one per axis
+- short mirrored bellcranks or pushrods to each pair of opposite flippers
+- hard mechanical stops in both directions
+
+Very important details:
+
+- never drive the flipper plate directly from a servo horn
+- keep the linkage short and protected
+- set the closed position slightly **over-center**
+- make impacts load the chassis stop, not the servo gears
+
+At this scale, servo failures come from shock and back-driving more often than from lack of nominal torque.
+
+## Drive System
+
+For this concept, I would keep `4WD`.
+
+Why:
+
+- the corners are the cleanest place to put wheels
+- you preserve all four long weapon faces
+- the robot keeps traction no matter which side becomes the front
+
+Recommended direction:
 
 - `4x` small brushed gearmotors in the corner pods
-- left-front and left-rear electrically paired
-- right-front and right-rear electrically paired
+- left pair electrically tied together
+- right pair electrically tied together
+- normal tank drive from the radio point of view
 
-So from the radio/electronics point of view, it still behaves like normal tank drive.
+Good target behavior:
 
-That gives you:
+- quick acceleration
+- moderate top speed
+- strong pushing, not drag-race speed
 
-- full weapon faces on the four main sides
-- decent traction
-- no big wheel cutouts in your flipper plates
+If you must save weight, cut body mass before cutting drive traction.
 
-### Electronics
-I would keep this boring and proven:
+## Electronics
 
-- `ELRS receiver`
-- `dual brushed ESC` or equivalent 2-channel brushed drive setup
+Keep `v1` boring and reliable:
+
+- `ELRS` receiver
+- `dual brushed ESC` or equivalent two-channel brushed drive setup
 - `2S LiPo/LiHV`
-- direct receiver control for the flippers, with opposite sides paired
+- direct receiver control for the two weapon axes
 
-I would **not** make a custom PCB first.
+Do **not** start with:
 
-If you later want smart behavior, add it in version 2 for something actually useful, like:
+- a custom PCB
+- a microcontroller dependency
+- fancy automation that the robot needs in order to function
 
-- a self-right macro
+You can always add smart features later, like:
+
+- self-right macro
 - servo pulse shaping
-- orientation-aware remapping
+- orientation-aware mixing
 
-But do not make the whole project depend on that from day one.
+But the first robot should be able to win without any of that.
 
-### Power
-This is one place the earlier answer glossed over too much.
+## Power Strategy
 
-The biggest electrical risk here is not drive current. It’s **servo brownout/reset problems**.
+The biggest electrical threat is not drive current.
 
-So I would plan for:
+It is **weapon-servo brownout and reset behavior**.
 
-- servos on a power rail that can actually handle them
-- receiver/logic isolated from ugly voltage sag
-- extra capacitance near the receiver rail
+Design around that from the start:
 
-In plain English: do **not** trust a tiny weak built-in BEC to run four weapon servos cleanly.
+- use an external servo power rail or BEC that can actually feed the weapon servos
+- do not rely on a weak ESC BEC for the whole robot
+- keep receiver power clean
+- add capacitance near the receiver/BEC rail
 
-## Material And Durability Choices
-If you can print only `PETG`, that’s workable. But I would use it intelligently.
+Plain-English rule:
 
-My preference would be:
+**If four corners drive and two weapon axes move at the same time, the radio must stay alive.**
 
-- printed chassis/tub in `PETG` or tougher if available
-- flipper faces made from plastic sheet like `polycarbonate` if your rules allow it
-- replaceable skid/lip pieces on the leading edges
-- metal pins/bolts for hinge axes if allowed by the rules
+## Realistic Weight Budget
 
-If you stay fully printed for the flipper plates, I would still make the **leading lip replaceable**, because that edge is going to get chewed up.
+Build to this budget, not to vibes:
 
-I would also make these parts modular and easy to swap:
+- chassis tub, top shell, bottom shell, corner pods: `115 g max`
+- four flipper plates, hinge hardware, linkage arms: `46 g max`
+- two weapon servos: `42 g max`
+- four drive motors: `52 g max`
+- wheels, tires, hubs: `28 g max`
+- battery: `35 g max`
+- drive ESC: `15 g max`
+- receiver: `3 g max`
+- external BEC, capacitor, small power board: `18 g max`
+- wiring, connectors, switch: `20 g max`
+- bolts, nuts, axles, retainers: `30 g max`
+- reserve for tuning and surprises: `50 g`
 
-- flipper plates
+Total target: `454 g`
+
+That reserve is intentional. A `1 lb` bot with no reserve is not optimized. It is just unfinished.
+
+## Material Strategy
+
+If `PETG` is what you have, use it carefully rather than using it everywhere at the same thickness.
+
+Best approach:
+
+- printed chassis tub in `PETG` or tougher plastic if available
+- printed shell designed with ribs, not just thick walls
+- flipper faces in `polycarbonate` sheet if your rules allow it
+- otherwise printed flippers with replaceable leading lips
+- metal hinge pins and fasteners if the rules permit them
+
+Make these parts modular and replaceable:
+
+- flipper faces
 - corner guards
-- servo horns/link tabs
+- skid/lip inserts
+- linkage tabs
 
-Those should be treated as consumables.
+Those are consumables.
 
-## The Biggest Overlooked Design Problem
-The hardest part of this concept is not “can a servo move the plate.”
+## Layout That Actually Fits
 
-It’s **driver workload**.
+Top-down, the packaging should work like this:
 
-That’s why I think the smartest control layout is:
+- battery in the center and as low as possible
+- receiver tucked above or beside the battery
+- drive ESC close to the battery
+- BEC and capacitor near receiver power entry
+- two weapon servos centered on the two main axes
+- cross-shafts running front/rear and left/right
+- drive motors in the four corner pods
 
-- normal tank drive
-- one momentary control for front/rear flippers
-- one momentary control for left/right flippers
+That keeps:
 
-That gives you a bot you can actually drive in a match.
+- mass centralized
+- weapon linkages short
+- the outer shell free to absorb impacts
 
-Four separate weapon controls is too much. A full custom controller is too much for v1. Two weapon axes is the sweet spot.
+## What To Avoid
 
-## What I’d Avoid
-I would avoid these completely:
+Avoid these completely in the `1 lb` version:
 
 - a true regular octagon
 - `CO2` or any pneumatic system
-- a custom motherboard as the first build step
-- direct-driving the flipper plate off the servo spline
-- exposed servo arms or linkages
-- powering all the servos from a weak ESC BEC
-- making the bot tall in order to get “more flip”
+- four fully independent weapon controls
+- direct-driving a plate from the servo spline
+- exposed servo arms
+- tall flipper doors
+- custom electronics as the first milestone
+- powering weapon servos from a weak built-in BEC
 
-Height is usually a trap on control bots. Low and dense wins.
+Height is a trap on control bots. Stay low.
 
-## Bottom Line
-If I were optimizing for pure match wins, I’d actually simplify even further and build a 1- or 2-sided control lifter first.
+## Build Priorities
 
-But if I were optimizing for **your idea specifically** and trying to make the best real version of it, I would build this:
+Build in this order:
+
+1. driving chassis that makes weight
+2. one weapon axis with hard stops
+3. second weapon axis
+4. replaceable lips and corner armor
+5. radio mapping and self-right testing
+
+Do not design the whole robot around version-2 electronics before the version-1 chassis survives impacts.
+
+## Final 1 lb Spec
+
+If I were locking the design today, I would commit to this:
 
 - chamfered-square chassis
 - four low scoop-flippers
-- one servo per side
-- opposite sides paired into two weapon controls
 - four corner drive wheels
-- no custom PCB in v1
-- designed as a fast, durable four-way control flipper, not a theatrical launcher
+- two central weapon servos
+- opposite sides paired into two weapon axes
+- no custom PCB in `v1`
+- low-profile control-flipper tuning, not giant-launch tuning
+- hard weight budget with at least `40 to 50 g` reserved until late in the build
 
-That is the version I think has the best chance of being both **cool** and **actually competitive**.
-
-If you want, I can take this one step further and sketch the exact bot layout in words: top-down layout, where each motor/servo/battery goes, and a rough weight budget that would make it realistic.
+That is the version most optimized for `1 lb`: simpler, lighter, easier to package, easier to drive, and more likely to survive real matches.
