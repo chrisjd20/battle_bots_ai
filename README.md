@@ -39,4 +39,4 @@ Individual projects may add subfolders such as `pcb/`, `firmware/`, `software/`,
 
 ## Other docs
 
-- Design notes and concepts: see top-level Markdown files (e.g. `BATTLE_BOT1.md`).
+- Design notes and concepts: keep them inside each bot's `docs/` folder (example: `bots/flipping-cool/docs/`).
