@@ -6,6 +6,8 @@ This is the first robot project in this monorepo.
 
 Current name: `flipping-cool`.
 
+Additional high level details in bots/flipping-cool/BATTLE_BOT1.md
+
 ## Scope
 
 - `pcb/`: KiCad project files and board-related outputs
@@ -14,3 +16,10 @@ Current name: `flipping-cool`.
 - `cad/`: Mechanical CAD sources
 - `prints/`: 3D print models and slicing notes
 - `docs/`: Build notes, BOM, test logs, and design decisions
+
+## Key docs
+
+- `BATTLE_BOT1.md`: high-level concept and weight-budget direction
+- `docs/BOM.md`: v1 baseline parts lock, mechanical standards, and immediate
+  next steps
+- `cad/README.md`: script-first mechanical CAD generation workflow

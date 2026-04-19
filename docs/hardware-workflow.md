@@ -2,6 +2,8 @@
 
 This repo is configured as a reusable KiCad + AI workspace for multiple hardware projects.
 
+For script-first mechanical CAD setup, see `docs/mechanical-workflow.md`.
+
 ## Current Status
 
 - KiCad tooling is installed (`kicad`, `kicad-cli`, `pcbnew` import).

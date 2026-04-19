@@ -3,43 +3,10 @@ description: KiCad AI workflow guardrails for this repo
 alwaysApply: true
 ---
 
-# KiCad Workspace Guidance
+# KiCad
 
-## Canonical project location
-
-- Primary KiCad source files are expected as `*.kicad_pro`, `*.kicad_sch`, `*.kicad_pcb` under `bots/<name>/` or `accessories/<name>/` (typically in `pcb/`).
-- Shared symbols, footprints, and 3D models belong in `shared/kicad-libraries/`.
-- Script entrypoint for UI launch is `launch.sh` from repo root.
-- If no KiCad project file exists yet, create one in a project folder before running ERC/DRC/export workflows.
-
-## Source-of-truth policy
-
-- Treat KiCad project files (`.kicad_pro`, `.kicad_sch`, `.kicad_pcb`) as authoritative for electrical and board state.
-- Treat generated fabrication and export artifacts as derived outputs unless explicitly documented otherwise.
-- Treat imported archives, snapshots, vendor exports, and legacy source files as read-only reference material unless a task explicitly requires converting or updating them.
-
-## Environment assumptions
-
-- Prefer KiCad 9.x with working `kicad`, `kicad-cli`, and Python `pcbnew`.
-- Use project-local MCP config from `.cursor/mcp.json` for KiCad automation.
-- If running under WSL/WSLg, prefer native GUI launch with existing display variables; only set `DISPLAY=:0` as fallback.
-- Autorouting (Freerouting) may use Docker/Podman/Java if available; do not assume it is always installed.
-
-## Default workflow
-
-1. Schematic edits
-2. ERC
-3. Sync schematic to board
-4. Placement and routing
-5. DRC
-6. Fabrication/export outputs
-
-If the repo is import-first for a specific task, document deviations before changing source files.
-
-## Guardrails
-
-- Do not overwrite or regenerate authoritative KiCad source files unless requested.
-- Do not modify unrelated bots/accessories while working on one project.
-- Do not treat temporary exports (`*.dsn`, `*.ses`, plots, cache files) as source-of-truth.
-- Preserve existing naming, stackup, and constraint intent documented in project files or notes.
-- Keep changes scoped to the requested task and update docs when introducing new workflow steps.
+- **Paths**: Primary projects as `*.kicad_pro`, `*.kicad_sch`, `*.kicad_pcb` under `bots/<name>/` or `accessories/<name>/` (often `pcb/`). Shared symbols, footprints, 3D models → `shared/kicad-libraries/`. Launch KiCad UI via `launch.sh` (repo root). If no project exists yet, create it in the project folder before ERC / DRC / export workflows.
+- **Source of truth**: `.kicad_pro`, `.kicad_sch`, `.kicad_pcb` are authoritative for electrical and board state. Fabrication and export outputs are derived unless documented otherwise. Imported archives, snapshots, vendor exports, and legacy sources are read-only reference unless the task explicitly requires converting or updating them.
+- **Environment**: Prefer KiCad 9.x with `kicad`, `kicad-cli`, and Python `pcbnew`. Use project-local KiCad MCP from `.cursor/mcp.json`. On WSL/WSLg, prefer existing display variables for GUI; use `DISPLAY=:0` only as fallback. Freerouting (autoroute) may rely on Docker/Podman/Java—do not assume it is installed.
+- **Default flow**: Schematic edits → ERC → sync schematic to board → placement and routing → DRC → fabrication/export outputs. If work on a task is import-first for this repo, document deviations before changing authoritative source files.
+- **Guardrails**: Do not overwrite or regenerate authoritative KiCad sources unless requested. Temporary exports (`*.dsn`, `*.ses`, plots, cache) are not source-of-truth. Preserve naming, stackup, and constraint intent from project files or notes. Scope changes to the requested task; update docs when introducing new workflow steps. Do not modify unrelated bots or accessories while working on one project.

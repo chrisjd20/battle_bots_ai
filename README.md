@@ -23,6 +23,20 @@ kicad-cli sch erc path/to/project.kicad_sch
 kicad-cli pcb drc path/to/project.kicad_pcb
 ```
 
+## Mechanical CAD + AI setup
+
+- Primary tooling: `FreeCAD` (GUI) + `build123d`/`CadQuery` (Python source)
+- CAD tool bootstrap: `./shared/software-tools/cad/bootstrap.sh`
+- MCP config: `.cursor/mcp.json` (server name `cad`)
+- CAD workflow notes: `shared/software-tools/cad/README.md`
+
+Quick commands:
+
+```bash
+./shared/software-tools/cad/bootstrap.sh
+.venv-cad/bin/python bots/flipping-cool/cad/src/baseline_layout.py
+```
+
 ## Repo layout (starter)
 
 | Path | Purpose |

@@ -15,3 +15,7 @@ fp-info-cache
 
 # Optional local MCP clone if added later:
 # tools/KiCAD-MCP-Server/
+
+# Local Python virtual environments
+.venv/
+.venv-cad/

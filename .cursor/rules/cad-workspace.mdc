@@ -1,0 +1,10 @@
+---
+description: Mechanical CAD AI workflow guardrails (FreeCAD + build123d)
+alwaysApply: true
+---
+
+# CAD
+
+- **Paths**: Parametric source → `bots/<name>/cad/src/` (Python). Generated → `bots/<name>/cad/generated/` (`.step`, `.stl`). Shared tooling → `shared/software-tools/cad/`.
+- **Source of truth**: `cad/src/*.py` is authoritative for geometry and packaging; `cad/generated/` is derived. Keep packaging dimensions aligned with each bot’s `docs/BOM.md` and design notes.
+- **How to work**: Prefer script-first edits (`build123d` / `CadQuery`) for repeatable automation. Scope geometry and exports to the requested task; document any new workflow steps. Do not treat ad-hoc GUI edits or exports as source-of-truth unless explicitly documented. Do not modify unrelated bots or accessories while focused on one project.

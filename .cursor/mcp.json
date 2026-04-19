@@ -10,6 +10,16 @@
         "PYTHONPATH": "/usr/lib/python3/dist-packages",
         "LOG_LEVEL": "info"
       }
+    },
+    "cad": {
+      "command": "/home/admin/github/battle_bots_ai/.venv-cad/bin/python",
+      "args": [
+        "/home/admin/github/battle_bots_ai/shared/software-tools/cad/cad_mcp_server.py"
+      ],
+      "env": {
+        "CAD_REPO_ROOT": "/home/admin/github/battle_bots_ai",
+        "CAD_PYTHON": "/home/admin/github/battle_bots_ai/.venv-cad/bin/python"
+      }
     }
   }
 }
