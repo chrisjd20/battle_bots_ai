@@ -1,0 +1,65 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {},
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {},
+      "track_widths": [],
+      "via_dimensions": []
+    }
+  },
+  "boards": [],
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "flipping-cool.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [],
+    "meta": {
+      "version": 0
+    }
+  },
+  "pcbnew": {
+    "page_layout_descr_file": ""
+  },
+  "sheets": [
+    [
+      "639db8f1-f7e7-58f0-b9c0-b246318af417",
+      "Root"
+    ],
+    [
+      "c7076af1-9a31-5690-879f-805d8afe37e9",
+      "00_system_overview"
+    ],
+    [
+      "25f9336b-54c9-532f-bf08-fa3253fd6600",
+      "01_battery_safety"
+    ],
+    [
+      "270cf411-9e6e-5cf2-886a-ff6c8c33bba6",
+      "02_power_rails"
+    ],
+    [
+      "ec305eb4-293a-58dd-b3b3-f8cf96ed735b",
+      "03_receiver_pwm"
+    ],
+    [
+      "f676580d-4df7-5cbb-b7ae-69fa9ea8d19d",
+      "04_drive_esc"
+    ],
+    [
+      "40b0b327-58ad-549e-b8db-c2d2cfb41215",
+      "05_weapon_servos"
+    ],
+    [
+      "f81cc6b7-8d4a-56f1-ac66-4ebad2f24264",
+      "06_expansion_test"
+    ]
+  ],
+  "text_variables": {}
+}

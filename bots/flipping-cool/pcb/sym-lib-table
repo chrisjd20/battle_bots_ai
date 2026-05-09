@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Connector_Generic")(type "KiCad")(uri "/usr/share/kicad/symbols/Connector_Generic.kicad_sym")(options "")(descr "KiCad generic connector symbols"))
+  (lib (name "Connector")(type "KiCad")(uri "/usr/share/kicad/symbols/Connector.kicad_sym")(options "")(descr "KiCad connector symbols"))
+  (lib (name "Device")(type "KiCad")(uri "/usr/share/kicad/symbols/Device.kicad_sym")(options "")(descr "KiCad device symbols"))
+  (lib (name "custom")(type "KiCad")(uri "${KIPRJMOD}/../../../shared/kicad-libraries/custom.kicad_sym")(options "")(descr "Battle bots custom module symbols"))
+)

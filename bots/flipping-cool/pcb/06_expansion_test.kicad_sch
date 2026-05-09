@@ -1,0 +1,2903 @@
+(kicad_sch
+  (version 20250114)
+  (generator "codex")
+  (generator_version "9.0")
+  (uuid "f57df12f-17b0-5ac5-a6b1-893d63f7af28")
+  (paper "A4")
+  (title_block
+    (title "Flipping Cool Rev A - Expansion and Test")
+    (date "2026-05-08")
+    (rev "A")
+    (company "battle_bots_ai")
+  )
+  (lib_symbols
+(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:Polyfuse_Small"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "F"
+			(at -1.905 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Polyfuse_Small"
+			(at 1.905 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 1.27 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*polyfuse* *PTC*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Polyfuse_Small_0_1"
+			(polyline
+				(pts
+					(xy -1.016 1.27) (xy -1.016 0.762) (xy 1.016 -0.762) (xy 1.016 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -0.508 1.27)
+				(end 0.508 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Polyfuse_Small_1_1"
+			(pin passive line
+				(at 0 2.54 270)
+				(length 0.635)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 0.635)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Connector_Generic:Conn_01x03"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x03_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Connector_Generic:Conn_01x04"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x04_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector_Generic:Conn_01x06"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x06"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x06_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -8.89)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+			(embedded_fonts no)
+		)
+(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+  (text "Controlled wiggle room for test, future telemetry, and spare accessories. Expansion outputs are documented but should remain unpopulated unless needed."
+    (at 15.00 15.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "a6780617-cf0e-5f95-90fd-9be7cf6b72e8")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 68.58 35.56 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cc51f055-3ea0-5131-a351-75813ef0fd83")
+    (property "Reference" "J40"
+      (at 68.58 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SPARE_SWITCHED_VBAT_OUT_FUSED"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+      (at 68.58 35.56 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 35.56 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Spare switched battery output protected by F1, use only for low-current accessory or measurement"
+      (at 68.58 35.56 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "0e75a642-0306-53aa-b631-d784bb367e64")
+    )
+    (pin "2"
+      (uuid "e2f9421e-dc8e-5de3-8ee2-16c8a5c8eba6")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J40") (unit 1))))
+  )
+  (wire
+    (pts (xy 63.50 35.56) (xy 48.26 35.56))
+    (stroke (width 0) (type solid))
+    (uuid "8e0dbdc0-3dfa-5bee-89ea-b47c05a8e2e4")
+  )
+  (label "SPARE_VBAT_FUSED"
+    (at 48.26 35.56 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "0a1f884f-e379-5b93-98fd-2cb6c0bed5e1")
+  )
+  (wire
+    (pts (xy 63.50 38.10) (xy 48.26 38.10))
+    (stroke (width 0) (type solid))
+    (uuid "0ad81472-d3d0-565d-954a-252bbca2ff00")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 48.26 38.10 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "04b50937-ccc6-5471-9525-04a0b4834310")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 73.00 34.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "145bf98a-08ec-5134-abd4-eafe96458bf1")
+  )
+  (symbol
+    (lib_id "Device:Polyfuse_Small")
+    (at 123.19 39.37 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "66868c22-314f-5370-ab4e-ef16ce6f6eb1")
+    (property "Reference" "F1"
+      (at 123.19 34.29 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MF-MSMF050_500mA_PTC"
+      (at 123.19 44.45 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+      (at 123.19 39.37 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.digikey.com/en/products/detail/bourns-inc/MF-MSMF050-24X-2/26793286"
+      (at 123.19 39.37 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "500mA hold resettable fuse for spare switched battery accessory output"
+      (at 123.19 39.37 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "eb6d1088-a786-538d-904e-4728fcd4ab02")
+    )
+    (pin "2"
+      (uuid "dff43d3d-c61a-548a-b6af-082e66e619f1")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "F1") (unit 1))))
+  )
+  (wire
+    (pts (xy 123.19 36.83) (xy 107.95 36.83))
+    (stroke (width 0) (type solid))
+    (uuid "a8f09ae6-66ca-527c-bf33-e4744043aea3")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 107.95 36.83 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "3d64f69c-ffda-54bd-9ed6-ff19f4356e2b")
+  )
+  (wire
+    (pts (xy 123.19 41.91) (xy 107.95 41.91))
+    (stroke (width 0) (type solid))
+    (uuid "4a79fa97-24dc-538d-8b8b-ea488d886986")
+  )
+  (label "SPARE_VBAT_FUSED"
+    (at 107.95 41.91 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "50eb427b-5daf-5eb2-b256-3b281db73043")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x03")
+    (at 68.58 58.42 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f001ad3c-654f-5e7a-a1da-ba79dabd3469")
+    (property "Reference" "J41"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SPARE_6V_ACCESSORY"
+      (at 68.58 63.50 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+      (at 68.58 58.42 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 58.42 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Future low-current 6V accessory/servo header"
+      (at 68.58 58.42 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "6e12c347-d718-5526-84d7-d30e3ecfcef7")
+    )
+    (pin "2"
+      (uuid "0737f8a3-8443-5eb3-b464-ea197e8925c3")
+    )
+    (pin "3"
+      (uuid "680dabfa-8647-5d6a-b8fd-5eb4aecfc5bc")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J41") (unit 1))))
+  )
+  (wire
+    (pts (xy 63.50 55.88) (xy 48.26 55.88))
+    (stroke (width 0) (type solid))
+    (uuid "a42c9103-4917-5c8b-bf64-bbc321aa747a")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 48.26 55.88 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "6bdd4972-27ec-5624-b324-a44164128238")
+  )
+  (wire
+    (pts (xy 63.50 58.42) (xy 48.26 58.42))
+    (stroke (width 0) (type solid))
+    (uuid "d39651e5-6cd7-5db0-920f-4984d1f77226")
+  )
+  (global_label "SERVO_6V" (shape passive)
+    (at 48.26 58.42 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "2b6f0e15-74fe-5bfb-a2fd-285f4f0f7d3e")
+  )
+  (wire
+    (pts (xy 63.50 60.96) (xy 48.26 60.96))
+    (stroke (width 0) (type solid))
+    (uuid "b8ed84ef-0e66-59c1-86db-4624dcf48c2f")
+  )
+  (global_label "PWM_SPARE_5" (shape passive)
+    (at 48.26 60.96 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "b88080de-1097-5f2a-9d97-b02422712cba")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 73.00 57.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "f3400339-89c5-54b1-90e4-9963bb4d3040")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 68.58 83.82 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "632cdfb3-2e39-58e0-b550-7f45bbd27670")
+    (property "Reference" "J42"
+      (at 68.58 78.74 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "OPTIONAL_CRSF_UART_PADS"
+      (at 68.58 88.90 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+      (at 68.58 83.82 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.mateksys.com/?portfolio=elrs-r24-p6"
+      (at 68.58 83.82 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Optional future CRSF/UART breakout; not required for Rev A PWM control"
+      (at 68.58 83.82 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "fb9c35d9-720b-53c3-9f34-1801ee0a2f29")
+    )
+    (pin "2"
+      (uuid "da43db84-6b9b-52a2-9b22-96de0163958f")
+    )
+    (pin "3"
+      (uuid "9a1f47e9-5102-5c7e-8655-68af658bfcfc")
+    )
+    (pin "4"
+      (uuid "2da93887-6d6b-57cb-8570-700f89fb16cf")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J42") (unit 1))))
+  )
+  (wire
+    (pts (xy 63.50 81.28) (xy 48.26 81.28))
+    (stroke (width 0) (type solid))
+    (uuid "6a27a412-a29a-5a29-8e64-587433465987")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 48.26 81.28 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "307eed92-4a62-5fa1-8f7c-a30b1f13aae5")
+  )
+  (wire
+    (pts (xy 63.50 83.82) (xy 48.26 83.82))
+    (stroke (width 0) (type solid))
+    (uuid "68d23538-2cd6-569d-9bda-366dda492c4a")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 48.26 83.82 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "1511d032-4f28-556c-88c1-b35ec13efd71")
+  )
+  (wire
+    (pts (xy 63.50 86.36) (xy 48.26 86.36))
+    (stroke (width 0) (type solid))
+    (uuid "abac6429-47b2-5c93-80d2-90a2703d6fec")
+  )
+  (global_label "CRSF_TX" (shape passive)
+    (at 48.26 86.36 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "784d73b2-00d3-538b-97b0-9aa07ab76fde")
+  )
+  (wire
+    (pts (xy 63.50 88.90) (xy 48.26 88.90))
+    (stroke (width 0) (type solid))
+    (uuid "89fc331c-3c67-5384-9db2-883de370f4d0")
+  )
+  (global_label "CRSF_RX" (shape passive)
+    (at 48.26 88.90 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "fca4f8c7-14ba-5370-89d7-d70c5c512160")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 73.00 83.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "e7fb5dd0-9f58-568d-8ad2-748097c56d4b")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x06")
+    (at 68.58 111.76 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0940e129-2dbb-5f2d-8bef-ca1ef2ed8890")
+    (property "Reference" "J43"
+      (at 68.58 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWM_SPARE_BREAKOUT"
+      (at 68.58 116.84 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+      (at 68.58 111.76 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 111.76 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Scope/debug breakout for PWM channels and receiver rail"
+      (at 68.58 111.76 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "59ea0707-1ad9-5a89-b5b6-638b7189c8d6")
+    )
+    (pin "2"
+      (uuid "8170fa63-d3f4-54bd-b09e-ac7f98465d1e")
+    )
+    (pin "3"
+      (uuid "f3685cb4-ada0-5c20-8092-0b0efa3ba298")
+    )
+    (pin "4"
+      (uuid "498785d3-eb48-5aee-aef9-90d5df0de504")
+    )
+    (pin "5"
+      (uuid "b24e8870-962b-5be7-a409-05d3c992a25e")
+    )
+    (pin "6"
+      (uuid "5dbe3047-e291-544c-a1db-41f333a62ac0")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J43") (unit 1))))
+  )
+  (wire
+    (pts (xy 63.50 106.68) (xy 48.26 106.68))
+    (stroke (width 0) (type solid))
+    (uuid "4069c2cf-fcaa-5953-9a79-f70eba1c22ef")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 48.26 106.68 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "3a1f8879-d4e4-5ef8-a4ff-f5727520d530")
+  )
+  (wire
+    (pts (xy 63.50 109.22) (xy 48.26 109.22))
+    (stroke (width 0) (type solid))
+    (uuid "e9be3487-b9d6-5cfe-a481-b3d16d80d12c")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 48.26 109.22 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "bbf2672e-3b3c-5171-ba90-2ac0dacc0fe1")
+  )
+  (wire
+    (pts (xy 63.50 111.76) (xy 48.26 111.76))
+    (stroke (width 0) (type solid))
+    (uuid "c3175003-3524-59d8-8c7a-b4694309a7d0")
+  )
+  (global_label "PWM_SPARE_5" (shape passive)
+    (at 48.26 111.76 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "4a76efe4-f01e-5b5b-9ab0-2395aa5d7cae")
+  )
+  (wire
+    (pts (xy 63.50 114.30) (xy 48.26 114.30))
+    (stroke (width 0) (type solid))
+    (uuid "2256743a-753f-58cb-a439-1b41a584fc95")
+  )
+  (global_label "PWM_SPARE_6" (shape passive)
+    (at 48.26 114.30 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "f53a548f-8649-55dc-b3c6-8ef0cdb5d3e0")
+  )
+  (wire
+    (pts (xy 63.50 116.84) (xy 48.26 116.84))
+    (stroke (width 0) (type solid))
+    (uuid "b213d9c2-2149-5fe9-afda-5115d2ab01ea")
+  )
+  (global_label "PWM_WEAPON_FR" (shape passive)
+    (at 48.26 116.84 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "051a080d-9a29-5a99-ac68-5df3a42c0ff6")
+  )
+  (wire
+    (pts (xy 63.50 119.38) (xy 48.26 119.38))
+    (stroke (width 0) (type solid))
+    (uuid "5db37f14-6251-5877-a479-ed2d70dbf6d4")
+  )
+  (global_label "PWM_WEAPON_LR" (shape passive)
+    (at 48.26 119.38 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "7370d50f-8020-5290-9945-39851c6c11dd")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 73.00 111.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "1237998f-1803-5be0-bde1-e57cdc05c7fe")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 31.75 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0e53c9a8-e98c-54ed-98e7-79a5f731eab9")
+    (property "Reference" "TP1"
+      (at 144.78 26.67 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "VBAT_RAW_TP"
+      (at 144.78 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 31.75 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 31.75 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for VBAT_RAW"
+      (at 144.78 31.75 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "c9f1bbd5-9ad7-51f7-8001-c9fbad6e2f3c")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP1") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 31.75) (xy 132.08 31.75))
+    (stroke (width 0) (type solid))
+    (uuid "42b537c8-46c9-5606-ae27-505ae44c63d7")
+  )
+  (global_label "VBAT_RAW" (shape passive)
+    (at 132.08 31.75 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "718d4732-0aaa-5c5d-a5a9-624d4a753f04")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cf55979e-fba1-5b19-93dc-9c4c82e87fd1")
+    (property "Reference" "TP2"
+      (at 144.78 39.37 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "VBAT_SW_TP"
+      (at 144.78 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 44.45 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 44.45 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for VBAT_SW"
+      (at 144.78 44.45 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "8816da3f-b835-5372-b6ae-050ba24b1bea")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP2") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 44.45) (xy 132.08 44.45))
+    (stroke (width 0) (type solid))
+    (uuid "a958d092-a025-5961-9675-5d49c1f2a55f")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 132.08 44.45 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "101ac095-bb2c-5606-ac32-6a4868ba9f21")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 55.88 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7f03a543-7de9-5e20-a84c-af5817e0493a")
+    (property "Reference" "TP3"
+      (at 144.78 50.80 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SERVO_6V_TP"
+      (at 144.78 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for SERVO_6V"
+      (at 144.78 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "94105c82-0eb8-530f-9f84-b1d13d8bafa6")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP3") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 55.88) (xy 132.08 55.88))
+    (stroke (width 0) (type solid))
+    (uuid "5ac15c9a-9680-5299-8e46-a345adbe8de6")
+  )
+  (global_label "SERVO_6V" (shape passive)
+    (at 132.08 55.88 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "623cc2df-d650-51e5-a0c7-497fdb12c6aa")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 68.58 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b4fb4ef5-e851-5292-9398-7698459267ef")
+    (property "Reference" "TP4"
+      (at 144.78 63.50 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "RX_6V_TP"
+      (at 144.78 73.66 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 68.58 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 68.58 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for RX_6V"
+      (at 144.78 68.58 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "6c6f069c-0805-5a09-85b3-390d362ac41f")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP4") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 68.58) (xy 132.08 68.58))
+    (stroke (width 0) (type solid))
+    (uuid "c155099a-f967-5bf3-9d53-64cfd72ff27f")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 132.08 68.58 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "76b5011f-6885-5c93-a81c-80308bc37ebf")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 80.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c4e0bcdf-02f0-50f3-87fc-3dbfb8698275")
+    (property "Reference" "TP5"
+      (at 144.78 74.93 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "GND_PWR_TP"
+      (at 144.78 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for GND_PWR"
+      (at 144.78 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "cea0eb01-cb97-5a29-90b4-9555473a3dae")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP5") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 80.01) (xy 132.08 80.01))
+    (stroke (width 0) (type solid))
+    (uuid "4490510b-e69b-557a-a3b6-b8e81c0b1ed9")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 132.08 80.01 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "68cbe10e-9451-5f5e-b3c3-06b868eee34b")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 91.44 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "132e025e-e321-5b8f-919b-66c87acf3d19")
+    (property "Reference" "TP6"
+      (at 144.78 86.36 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWM_DRIVE_LEFT_TP"
+      (at 144.78 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 91.44 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 91.44 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for PWM_DRIVE_LEFT"
+      (at 144.78 91.44 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "0649f4ff-baf1-5da6-804a-b1007c44a9b1")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP6") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 91.44) (xy 132.08 91.44))
+    (stroke (width 0) (type solid))
+    (uuid "1bcbdb5e-3e99-5742-8c10-49563d50f6ec")
+  )
+  (global_label "PWM_DRIVE_LEFT" (shape passive)
+    (at 132.08 91.44 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "110e6b4d-b8dc-5643-8461-2d0f40e5cef5")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 104.14 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1389a805-3d6a-5dcc-86f4-450b6b86a4a5")
+    (property "Reference" "TP7"
+      (at 144.78 99.06 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWM_DRIVE_RIGHT_TP"
+      (at 144.78 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 104.14 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 104.14 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for PWM_DRIVE_RIGHT"
+      (at 144.78 104.14 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "04fdb26f-530c-5665-905f-f632b7a10e5b")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP7") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 104.14) (xy 132.08 104.14))
+    (stroke (width 0) (type solid))
+    (uuid "af3855cc-28ac-590c-ad10-9a015459a534")
+  )
+  (global_label "PWM_DRIVE_RIGHT" (shape passive)
+    (at 132.08 104.14 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "19760c27-876c-5dc7-a840-c66c171e5fd6")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 115.57 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8aa4bd0c-e363-5a1c-8e3c-1dd6d6792c59")
+    (property "Reference" "TP8"
+      (at 144.78 110.49 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWM_WEAPON_FR_TP"
+      (at 144.78 120.65 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 115.57 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 115.57 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for PWM_WEAPON_FR"
+      (at 144.78 115.57 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "7ab1a92e-7d71-5cfe-a0c6-5b2729f4ea07")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP8") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 115.57) (xy 132.08 115.57))
+    (stroke (width 0) (type solid))
+    (uuid "8d4dbb22-1506-51c7-ad4f-c7372f5c3db9")
+  )
+  (global_label "PWM_WEAPON_FR" (shape passive)
+    (at 132.08 115.57 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "0af9c578-e3be-5e5d-ac6e-66c14f14a945")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 144.78 128.27 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4def54e7-958b-578a-aa2d-b328f613c4dd")
+    (property "Reference" "TP9"
+      (at 144.78 123.19 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWM_WEAPON_LR_TP"
+      (at 144.78 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 144.78 128.27 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 128.27 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for PWM_WEAPON_LR"
+      (at 144.78 128.27 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "a3e44bd4-b850-5277-a955-e1e0dc2c395c")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP9") (unit 1))))
+  )
+  (wire
+    (pts (xy 144.78 128.27) (xy 132.08 128.27))
+    (stroke (width 0) (type solid))
+    (uuid "e39c7ac8-e3fd-5ecd-ae81-5ade682eb780")
+  )
+  (global_label "PWM_WEAPON_LR" (shape passive)
+    (at 132.08 128.27 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "90c350fe-0702-5ddd-ab16-072f62cf8ca7")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 177.80 31.75 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1b062f48-0594-5785-894e-88aa8c42a5b7")
+    (property "Reference" "TP10"
+      (at 177.80 26.67 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "BEC_EN_TP"
+      (at 177.80 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 177.80 31.75 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 177.80 31.75 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for BEC_EN"
+      (at 177.80 31.75 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "670b0094-537a-5aa9-83b7-75fea94df683")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP10") (unit 1))))
+  )
+  (wire
+    (pts (xy 177.80 31.75) (xy 165.10 31.75))
+    (stroke (width 0) (type solid))
+    (uuid "44f4f173-4ea1-5634-b387-76792d352726")
+  )
+  (global_label "BEC_EN" (shape passive)
+    (at 165.10 31.75 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "690f2e7f-b024-5fd0-b659-99c1c0daa75e")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 177.80 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "56d2c230-3ff0-5431-a1be-bf102decbb81")
+    (property "Reference" "TP11"
+      (at 177.80 39.37 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "BEC_PG_TP"
+      (at 177.80 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 177.80 44.45 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 177.80 44.45 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for BEC_PG"
+      (at 177.80 44.45 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "076537ad-8487-521f-9c42-b5873e384f2d")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP11") (unit 1))))
+  )
+  (wire
+    (pts (xy 177.80 44.45) (xy 165.10 44.45))
+    (stroke (width 0) (type solid))
+    (uuid "a412a315-f393-533b-aff5-94266632a93c")
+  )
+  (global_label "BEC_PG" (shape passive)
+    (at 165.10 44.45 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "93927aee-1614-5fcd-9f9e-ae135d39b4aa")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 177.80 55.88 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "201a7248-6716-5b20-90f8-939ca1dd2134")
+    (property "Reference" "TP12"
+      (at 177.80 50.80 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CELL1_SENSE_TP"
+      (at 177.80 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 177.80 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 177.80 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for CELL1_SENSE"
+      (at 177.80 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "456bb087-0231-51ba-8abd-676458756a4c")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP12") (unit 1))))
+  )
+  (wire
+    (pts (xy 177.80 55.88) (xy 165.10 55.88))
+    (stroke (width 0) (type solid))
+    (uuid "b5b6c74e-cac6-5a4c-ac75-3a9fba01993f")
+  )
+  (global_label "CELL1_SENSE" (shape passive)
+    (at 165.10 55.88 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "4cba6294-49a1-52c2-9e59-857775a19d25")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 177.80 68.58 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cbce1283-f2dc-52ca-89f1-974a98d06f82")
+    (property "Reference" "TP13"
+      (at 177.80 63.50 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "WEKA_5V_NC_TP"
+      (at 177.80 73.66 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 177.80 68.58 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 177.80 68.58 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for WEKA_5V_NC"
+      (at 177.80 68.58 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "55d5c5ca-9609-5a8b-91c2-32ba8b91b691")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP13") (unit 1))))
+  )
+  (wire
+    (pts (xy 177.80 68.58) (xy 165.10 68.58))
+    (stroke (width 0) (type solid))
+    (uuid "6686635b-ef11-58a1-aee9-719f4bbefe01")
+  )
+  (global_label "WEKA_5V_NC" (shape passive)
+    (at 165.10 68.58 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "16bdedb7-329d-50bd-991c-281d33a1a495")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 177.80 80.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8afc4e8e-963f-5aa3-8986-4d2960c6e608")
+    (property "Reference" "TP14"
+      (at 177.80 74.93 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CRSF_TX_TP"
+      (at 177.80 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 177.80 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 177.80 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for CRSF_TX"
+      (at 177.80 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "df89c1d5-8b7c-550d-9f33-eb322714c355")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP14") (unit 1))))
+  )
+  (wire
+    (pts (xy 177.80 80.01) (xy 165.10 80.01))
+    (stroke (width 0) (type solid))
+    (uuid "f64f8806-5045-553b-86d0-f4ca88fbc472")
+  )
+  (global_label "CRSF_TX" (shape passive)
+    (at 165.10 80.01 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "d1f3f49b-87d1-52d4-945d-38bc0950cd22")
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 177.80 91.44 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a77e214a-d04e-5d2c-a1fc-1c7353f09407")
+    (property "Reference" "TP15"
+      (at 177.80 86.36 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CRSF_RX_TP"
+      (at 177.80 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+      (at 177.80 91.44 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 177.80 91.44 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Test pad for CRSF_RX"
+      (at 177.80 91.44 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "9e76bb96-948a-5793-9240-c7d08af5b6aa")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "TP15") (unit 1))))
+  )
+  (wire
+    (pts (xy 177.80 91.44) (xy 165.10 91.44))
+    (stroke (width 0) (type solid))
+    (uuid "0ad323e8-bcd2-5c87-810b-79f0bb4794d9")
+  )
+  (global_label "CRSF_RX" (shape passive)
+    (at 165.10 91.44 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "d7c7f8d6-1bc8-54a3-82d8-89d59266264e")
+  )
+  (text "Future-growth additions: one pit/debug header, optional 3.3V regulator, MCU tap headers, STEMMA/Qwiic-style I2C sensor port, ADC sense dividers, and a common-anode RGB status LED output."
+    (at 15.00 129.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "fc06e001-0000-4000-8000-000000000001")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x06")
+    (at 68.58 147.32 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000002")
+    (property "Reference" "J44"
+      (at 68.58 139.70 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PIT_DEBUG_POWER_COMMS"
+      (at 68.58 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+      (at 68.58 147.32 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 147.32 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Pit/debug header for quick meter or logic-analyzer access; not a high-current output"
+      (at 68.58 147.32 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000003"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000004"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-000000000005"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-000000000006"))
+    (pin "5" (uuid "fc06e001-0000-4000-8000-000000000007"))
+    (pin "6" (uuid "fc06e001-0000-4000-8000-000000000008"))
+    (instances (project "flipping-cool" (path "/" (reference "J44") (unit 1))))
+  )
+  (wire (pts (xy 63.50 142.24) (xy 48.26 142.24)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000009"))
+  (global_label "GND_PWR" (shape passive) (at 48.26 142.24 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000000a"))
+  (wire (pts (xy 63.50 144.78) (xy 48.26 144.78)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000000b"))
+  (global_label "VBAT_SW" (shape passive) (at 48.26 144.78 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000000c"))
+  (wire (pts (xy 63.50 147.32) (xy 48.26 147.32)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000000d"))
+  (global_label "SERVO_6V" (shape passive) (at 48.26 147.32 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000000e"))
+  (wire (pts (xy 63.50 149.86) (xy 48.26 149.86)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000000f"))
+  (global_label "RX_6V" (shape passive) (at 48.26 149.86 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000010"))
+  (wire (pts (xy 63.50 152.40) (xy 48.26 152.40)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000011"))
+  (global_label "CRSF_TX" (shape passive) (at 48.26 152.40 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000012"))
+  (wire (pts (xy 63.50 154.94) (xy 48.26 154.94)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000013"))
+  (global_label "CRSF_RX" (shape passive) (at 48.26 154.94 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000014"))
+  (text "J44 is a pit/debug tap only: use it for measurement and setup, not for battery/servo load wiring."
+    (at 73.00 145.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "fc06e001-0000-4000-8000-000000000015")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 68.58 177.80 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000016")
+    (property "Reference" "J45"
+      (at 68.58 172.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "OPTIONAL_POLOLU_D24V5F3_3V3"
+      (at 68.58 185.42 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+      (at 68.58 177.80 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.pololu.com/product/2842"
+      (at 68.58 177.80 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Optional 3.3V 500mA regulator module, pin order SHDN/VIN/GND/VOUT"
+      (at 68.58 177.80 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000017"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000018"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-000000000019"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-00000000001a"))
+    (instances (project "flipping-cool" (path "/" (reference "J45") (unit 1))))
+  )
+  (wire (pts (xy 63.50 175.26) (xy 48.26 175.26)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000001b"))
+  (global_label "AUX_3V3_SHDN" (shape passive) (at 48.26 175.26 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000001c"))
+  (wire (pts (xy 63.50 177.80) (xy 48.26 177.80)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000001d"))
+  (global_label "VBAT_SW" (shape passive) (at 48.26 177.80 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000001e"))
+  (wire (pts (xy 63.50 180.34) (xy 48.26 180.34)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000001f"))
+  (global_label "GND_PWR" (shape passive) (at 48.26 180.34 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000020"))
+  (wire (pts (xy 63.50 182.88) (xy 48.26 182.88)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000021"))
+  (global_label "AUX_3V3" (shape passive) (at 48.26 182.88 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000022"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x06")
+    (at 68.58 208.28 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000023")
+    (property "Reference" "J46"
+      (at 68.58 200.66 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "FUTURE_MCU_POWER_COMMS"
+      (at 68.58 218.44 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+      (at 68.58 208.28 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 208.28 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Future 3.3V MCU power and communications tap"
+      (at 68.58 208.28 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000024"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000025"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-000000000026"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-000000000027"))
+    (pin "5" (uuid "fc06e001-0000-4000-8000-000000000028"))
+    (pin "6" (uuid "fc06e001-0000-4000-8000-000000000029"))
+    (instances (project "flipping-cool" (path "/" (reference "J46") (unit 1))))
+  )
+  (wire (pts (xy 63.50 203.20) (xy 48.26 203.20)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000002a"))
+  (global_label "GND_PWR" (shape passive) (at 48.26 203.20 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000002b"))
+  (wire (pts (xy 63.50 205.74) (xy 48.26 205.74)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000002c"))
+  (global_label "AUX_3V3" (shape passive) (at 48.26 205.74 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000002d"))
+  (wire (pts (xy 63.50 208.28) (xy 48.26 208.28)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000002e"))
+  (global_label "BEC_PG" (shape passive) (at 48.26 208.28 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000002f"))
+  (wire (pts (xy 63.50 210.82) (xy 48.26 210.82)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000030"))
+  (global_label "AUX_3V3_SHDN" (shape passive) (at 48.26 210.82 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000031"))
+  (wire (pts (xy 63.50 213.36) (xy 48.26 213.36)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000032"))
+  (global_label "CRSF_TX" (shape passive) (at 48.26 213.36 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000033"))
+  (wire (pts (xy 63.50 215.90) (xy 48.26 215.90)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000034"))
+  (global_label "CRSF_RX" (shape passive) (at 48.26 215.90 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000035"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x06")
+    (at 68.58 238.76 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000036")
+    (property "Reference" "J47"
+      (at 68.58 231.14 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "FUTURE_MCU_PWM_I2C_TAPS"
+      (at 68.58 248.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+      (at 68.58 238.76 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 238.76 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Future MCU taps for I2C and existing PWM nets; MCU pins must stay high-Z unless the harness is intentionally reworked"
+      (at 68.58 238.76 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000037"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000038"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-000000000039"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-00000000003a"))
+    (pin "5" (uuid "fc06e001-0000-4000-8000-00000000003b"))
+    (pin "6" (uuid "fc06e001-0000-4000-8000-00000000003c"))
+    (instances (project "flipping-cool" (path "/" (reference "J47") (unit 1))))
+  )
+  (wire (pts (xy 63.50 233.68) (xy 48.26 233.68)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000003d"))
+  (global_label "I2C_SDA" (shape passive) (at 48.26 233.68 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000003e"))
+  (wire (pts (xy 63.50 236.22) (xy 48.26 236.22)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000003f"))
+  (global_label "I2C_SCL" (shape passive) (at 48.26 236.22 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000040"))
+  (wire (pts (xy 63.50 238.76) (xy 48.26 238.76)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000041"))
+  (global_label "PWM_DRIVE_LEFT" (shape passive) (at 48.26 238.76 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000042"))
+  (wire (pts (xy 63.50 241.30) (xy 48.26 241.30)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000043"))
+  (global_label "PWM_DRIVE_RIGHT" (shape passive) (at 48.26 241.30 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000044"))
+  (wire (pts (xy 63.50 243.84) (xy 48.26 243.84)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000045"))
+  (global_label "PWM_WEAPON_FR" (shape passive) (at 48.26 243.84 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000046"))
+  (wire (pts (xy 63.50 246.38) (xy 48.26 246.38)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000047"))
+  (global_label "PWM_WEAPON_LR" (shape passive) (at 48.26 246.38 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000048"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x06")
+    (at 68.58 269.24 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000049")
+    (property "Reference" "J48"
+      (at 68.58 261.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "FUTURE_MCU_ADC_LED"
+      (at 68.58 279.40 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+      (at 68.58 269.24 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 68.58 269.24 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Future MCU analog sense and RGB status LED sink pins"
+      (at 68.58 269.24 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-00000000004a"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-00000000004b"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-00000000004c"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-00000000004d"))
+    (pin "5" (uuid "fc06e001-0000-4000-8000-00000000004e"))
+    (pin "6" (uuid "fc06e001-0000-4000-8000-00000000004f"))
+    (instances (project "flipping-cool" (path "/" (reference "J48") (unit 1))))
+  )
+  (wire (pts (xy 63.50 264.16) (xy 48.26 264.16)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000050"))
+  (global_label "ADC_VBAT" (shape passive) (at 48.26 264.16 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000051"))
+  (wire (pts (xy 63.50 266.70) (xy 48.26 266.70)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000052"))
+  (global_label "ADC_SERVO_6V" (shape passive) (at 48.26 266.70 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000053"))
+  (wire (pts (xy 63.50 269.24) (xy 48.26 269.24)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000054"))
+  (global_label "ADC_RX_6V" (shape passive) (at 48.26 269.24 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000055"))
+  (wire (pts (xy 63.50 271.78) (xy 48.26 271.78)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000056"))
+  (global_label "STATUS_LED_R_N" (shape passive) (at 48.26 271.78 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000057"))
+  (wire (pts (xy 63.50 274.32) (xy 48.26 274.32)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000058"))
+  (global_label "STATUS_LED_G_N" (shape passive) (at 48.26 274.32 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000059"))
+  (wire (pts (xy 63.50 276.86) (xy 48.26 276.86)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000005a"))
+  (global_label "STATUS_LED_B_N" (shape passive) (at 48.26 276.86 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000005b"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 144.78 147.32 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-00000000005c")
+    (property "Reference" "J49"
+      (at 144.78 142.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "I2C_SENSOR_STEMMA_QT_QWIIC"
+      (at 144.78 154.94 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+      (at 144.78 147.32 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://learn.adafruit.com/introducing-adafruit-stemma-qt/technical-specs"
+      (at 144.78 147.32 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "3.3V I2C sensor port, STEMMA QT/Qwiic pin order: GND, V+, SDA, SCL"
+      (at 144.78 147.32 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-00000000005d"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-00000000005e"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-00000000005f"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-000000000060"))
+    (instances (project "flipping-cool" (path "/" (reference "J49") (unit 1))))
+  )
+  (wire (pts (xy 139.70 144.78) (xy 124.46 144.78)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000061"))
+  (global_label "GND_PWR" (shape passive) (at 124.46 144.78 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000062"))
+  (wire (pts (xy 139.70 147.32) (xy 124.46 147.32)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000063"))
+  (global_label "AUX_3V3" (shape passive) (at 124.46 147.32 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000064"))
+  (wire (pts (xy 139.70 149.86) (xy 124.46 149.86)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000065"))
+  (global_label "I2C_SDA" (shape passive) (at 124.46 149.86 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000066"))
+  (wire (pts (xy 139.70 152.40) (xy 124.46 152.40)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000067"))
+  (global_label "I2C_SCL" (shape passive) (at 124.46 152.40 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000068"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 144.78 177.80 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000069")
+    (property "Reference" "J50"
+      (at 144.78 172.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "COMMON_ANODE_RGB_STATUS_LED"
+      (at 144.78 185.42 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+      (at 144.78 177.80 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 144.78 177.80 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Bare common-anode RGB LED header; pin 1 common anode to 3.3V, pins 2-4 cathodes through board resistors to MCU sink pins"
+      (at 144.78 177.80 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1" (uuid "fc06e001-0000-4000-8000-00000000006a"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-00000000006b"))
+    (pin "3" (uuid "fc06e001-0000-4000-8000-00000000006c"))
+    (pin "4" (uuid "fc06e001-0000-4000-8000-00000000006d"))
+    (instances (project "flipping-cool" (path "/" (reference "J50") (unit 1))))
+  )
+  (wire (pts (xy 139.70 175.26) (xy 124.46 175.26)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000006e"))
+  (global_label "AUX_3V3" (shape passive) (at 124.46 175.26 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000006f"))
+  (wire (pts (xy 139.70 177.80) (xy 124.46 177.80)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000070"))
+  (global_label "STATUS_LED_R_K" (shape passive) (at 124.46 177.80 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000071"))
+  (wire (pts (xy 139.70 180.34) (xy 124.46 180.34)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000072"))
+  (global_label "STATUS_LED_G_K" (shape passive) (at 124.46 180.34 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000073"))
+  (wire (pts (xy 139.70 182.88) (xy 124.46 182.88)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000074"))
+  (global_label "STATUS_LED_B_K" (shape passive) (at 124.46 182.88 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000075"))
+  (text "J50 expects a common-anode RGB LED. Firmware drives STATUS_LED_*_N low to turn each color on."
+    (at 150.00 174.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "fc06e001-0000-4000-8000-000000000076")
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 129.54 205.74 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000077")
+    (property "Reference" "R40" (at 129.54 200.66 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k_ADC_VBAT_HI" (at 129.54 210.82 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 129.54 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 129.54 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "High-side resistor for optional VBAT ADC divider; 100k/47k keeps 2S LiHV below 3.3V ADC range" (at 129.54 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000078"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000079"))
+    (instances (project "flipping-cool" (path "/" (reference "R40") (unit 1))))
+  )
+  (wire (pts (xy 129.54 201.93) (xy 114.30 201.93)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000007a"))
+  (global_label "VBAT_SW" (shape passive) (at 114.30 201.93 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000007b"))
+  (wire (pts (xy 129.54 209.55) (xy 114.30 209.55)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000007c"))
+  (global_label "ADC_VBAT" (shape passive) (at 114.30 209.55 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000007d"))
+  (symbol
+    (lib_id "Device:R")
+    (at 129.54 217.17 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-00000000007e")
+    (property "Reference" "R41" (at 129.54 212.09 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47k_ADC_VBAT_LO" (at 129.54 222.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 129.54 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 129.54 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "Low-side resistor for optional VBAT ADC divider" (at 129.54 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-00000000007f"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000080"))
+    (instances (project "flipping-cool" (path "/" (reference "R41") (unit 1))))
+  )
+  (wire (pts (xy 129.54 213.36) (xy 114.30 213.36)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000081"))
+  (global_label "ADC_VBAT" (shape passive) (at 114.30 213.36 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000082"))
+  (wire (pts (xy 129.54 220.98) (xy 114.30 220.98)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000083"))
+  (global_label "GND_PWR" (shape passive) (at 114.30 220.98 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000084"))
+  (symbol
+    (lib_id "Device:R")
+    (at 154.94 205.74 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000085")
+    (property "Reference" "R42" (at 154.94 200.66 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k_ADC_SERVO_HI" (at 154.94 210.82 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 154.94 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 154.94 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "High-side resistor for optional SERVO_6V ADC divider" (at 154.94 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000086"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000087"))
+    (instances (project "flipping-cool" (path "/" (reference "R42") (unit 1))))
+  )
+  (wire (pts (xy 154.94 201.93) (xy 139.70 201.93)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000088"))
+  (global_label "SERVO_6V" (shape passive) (at 139.70 201.93 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000089"))
+  (wire (pts (xy 154.94 209.55) (xy 139.70 209.55)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000008a"))
+  (global_label "ADC_SERVO_6V" (shape passive) (at 139.70 209.55 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000008b"))
+  (symbol
+    (lib_id "Device:R")
+    (at 154.94 217.17 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-00000000008c")
+    (property "Reference" "R43" (at 154.94 212.09 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47k_ADC_SERVO_LO" (at 154.94 222.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 154.94 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 154.94 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "Low-side resistor for optional SERVO_6V ADC divider" (at 154.94 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-00000000008d"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-00000000008e"))
+    (instances (project "flipping-cool" (path "/" (reference "R43") (unit 1))))
+  )
+  (wire (pts (xy 154.94 213.36) (xy 139.70 213.36)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000008f"))
+  (global_label "ADC_SERVO_6V" (shape passive) (at 139.70 213.36 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000090"))
+  (wire (pts (xy 154.94 220.98) (xy 139.70 220.98)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000091"))
+  (global_label "GND_PWR" (shape passive) (at 139.70 220.98 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000092"))
+  (symbol
+    (lib_id "Device:R")
+    (at 180.34 205.74 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-000000000093")
+    (property "Reference" "R44" (at 180.34 200.66 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100k_ADC_RX_HI" (at 180.34 210.82 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 180.34 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 180.34 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "High-side resistor for optional RX_6V ADC divider" (at 180.34 205.74 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-000000000094"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-000000000095"))
+    (instances (project "flipping-cool" (path "/" (reference "R44") (unit 1))))
+  )
+  (wire (pts (xy 180.34 201.93) (xy 165.10 201.93)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000096"))
+  (global_label "RX_6V" (shape passive) (at 165.10 201.93 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000097"))
+  (wire (pts (xy 180.34 209.55) (xy 165.10 209.55)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-000000000098"))
+  (global_label "ADC_RX_6V" (shape passive) (at 165.10 209.55 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-000000000099"))
+  (symbol
+    (lib_id "Device:R")
+    (at 180.34 217.17 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-00000000009a")
+    (property "Reference" "R45" (at 180.34 212.09 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47k_ADC_RX_LO" (at 180.34 222.25 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 180.34 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 180.34 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "Low-side resistor for optional RX_6V ADC divider" (at 180.34 217.17 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-00000000009b"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-00000000009c"))
+    (instances (project "flipping-cool" (path "/" (reference "R45") (unit 1))))
+  )
+  (wire (pts (xy 180.34 213.36) (xy 165.10 213.36)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000009d"))
+  (global_label "ADC_RX_6V" (shape passive) (at 165.10 213.36 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-00000000009e"))
+  (wire (pts (xy 180.34 220.98) (xy 165.10 220.98)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-00000000009f"))
+  (global_label "GND_PWR" (shape passive) (at 165.10 220.98 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000a0"))
+  (symbol
+    (lib_id "Device:R")
+    (at 129.54 237.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid "fc06e001-0000-4000-8000-0000000000a1")
+    (property "Reference" "R46" (at 129.54 232.41 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4k7_DNP_I2C_SDA_PULLUP" (at 129.54 242.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 129.54 237.49 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 129.54 237.49 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "Optional I2C pull-up; leave DNP if the sensor breakout already provides pull-ups" (at 129.54 237.49 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-0000000000a2"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-0000000000a3"))
+    (instances (project "flipping-cool" (path "/" (reference "R46") (unit 1))))
+  )
+  (wire (pts (xy 129.54 233.68) (xy 114.30 233.68)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000a4"))
+  (global_label "AUX_3V3" (shape passive) (at 114.30 233.68 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000a5"))
+  (wire (pts (xy 129.54 241.30) (xy 114.30 241.30)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000a6"))
+  (global_label "I2C_SDA" (shape passive) (at 114.30 241.30 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000a7"))
+  (symbol
+    (lib_id "Device:R")
+    (at 154.94 237.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid "fc06e001-0000-4000-8000-0000000000a8")
+    (property "Reference" "R47" (at 154.94 232.41 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4k7_DNP_I2C_SCL_PULLUP" (at 154.94 242.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 154.94 237.49 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 154.94 237.49 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "Optional I2C pull-up; leave DNP if the sensor breakout already provides pull-ups" (at 154.94 237.49 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-0000000000a9"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-0000000000aa"))
+    (instances (project "flipping-cool" (path "/" (reference "R47") (unit 1))))
+  )
+  (wire (pts (xy 154.94 233.68) (xy 139.70 233.68)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000ab"))
+  (global_label "AUX_3V3" (shape passive) (at 139.70 233.68 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000ac"))
+  (wire (pts (xy 154.94 241.30) (xy 139.70 241.30)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000ad"))
+  (global_label "I2C_SCL" (shape passive) (at 139.70 241.30 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000ae"))
+  (symbol
+    (lib_id "Device:R")
+    (at 129.54 257.81 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-0000000000af")
+    (property "Reference" "R50" (at 129.54 252.92 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "330R_STATUS_RED" (at 129.54 263.08 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 129.54 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 129.54 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "RGB LED red-channel current limit for 3.3V common-anode LED" (at 129.54 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-0000000000b0"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-0000000000b1"))
+    (instances (project "flipping-cool" (path "/" (reference "R50") (unit 1))))
+  )
+  (wire (pts (xy 129.54 254.00) (xy 114.30 254.00)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000b2"))
+  (global_label "STATUS_LED_R_K" (shape passive) (at 114.30 254.00 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000b3"))
+  (wire (pts (xy 129.54 261.62) (xy 114.30 261.62)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000b4"))
+  (global_label "STATUS_LED_R_N" (shape passive) (at 114.30 261.62 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000b5"))
+  (symbol
+    (lib_id "Device:R")
+    (at 154.94 257.81 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-0000000000b6")
+    (property "Reference" "R51" (at 154.94 252.92 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "330R_STATUS_GREEN" (at 154.94 263.08 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 154.94 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 154.94 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "RGB LED green-channel current limit for 3.3V common-anode LED" (at 154.94 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-0000000000b7"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-0000000000b8"))
+    (instances (project "flipping-cool" (path "/" (reference "R51") (unit 1))))
+  )
+  (wire (pts (xy 154.94 254.00) (xy 139.70 254.00)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000b9"))
+  (global_label "STATUS_LED_G_K" (shape passive) (at 139.70 254.00 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000ba"))
+  (wire (pts (xy 154.94 261.62) (xy 139.70 261.62)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000bb"))
+  (global_label "STATUS_LED_G_N" (shape passive) (at 139.70 261.62 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000bc"))
+  (symbol
+    (lib_id "Device:R")
+    (at 180.34 257.81 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fc06e001-0000-4000-8000-0000000000bd")
+    (property "Reference" "R52" (at 180.34 252.92 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "330R_STATUS_BLUE" (at 180.34 263.08 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 180.34 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Datasheet" "~" (at 180.34 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (property "Description" "RGB LED blue-channel current limit for 3.3V common-anode LED" (at 180.34 257.81 0) (effects (font (size 1.27 1.27))) (hide yes))
+    (pin "1" (uuid "fc06e001-0000-4000-8000-0000000000be"))
+    (pin "2" (uuid "fc06e001-0000-4000-8000-0000000000bf"))
+    (instances (project "flipping-cool" (path "/" (reference "R52") (unit 1))))
+  )
+  (wire (pts (xy 180.34 254.00) (xy 165.10 254.00)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000c0"))
+  (global_label "STATUS_LED_B_K" (shape passive) (at 165.10 254.00 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000c1"))
+  (wire (pts (xy 180.34 261.62) (xy 165.10 261.62)) (stroke (width 0) (type solid)) (uuid "fc06e001-0000-4000-8000-0000000000c2"))
+  (global_label "STATUS_LED_B_N" (shape passive) (at 165.10 261.62 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc06e001-0000-4000-8000-0000000000c3"))
+  (text "ADC dividers use 100k/47k, so 8.7V pack max reads about 2.8V at ADC_VBAT. SERVO_6V and RX_6V read about 1.9V at 6V."
+    (at 113.00 226.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "fc06e001-0000-4000-8000-0000000000c4")
+  )
+  (text "R46/R47 are DNP because many STEMMA/Qwiic sensor boards already include I2C pull-ups."
+    (at 113.00 244.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "fc06e001-0000-4000-8000-0000000000c5")
+  )
+  (sheet_instances
+    (path "/f81cc6b7-8d4a-56f1-ac66-4ebad2f24264/" (page "8"))
+  )
+)

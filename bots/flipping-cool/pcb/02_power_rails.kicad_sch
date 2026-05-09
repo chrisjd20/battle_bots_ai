@@ -1,0 +1,728 @@
+(kicad_sch
+  (version 20250114)
+  (generator "codex")
+  (generator_version "9.0")
+  (uuid "2c63dcb0-22e1-5f13-b522-05d35dc5d381")
+  (paper "A4")
+  (title_block
+    (title "Flipping Cool Rev A - Power Rails")
+    (date "2026-05-08")
+    (rev "A")
+    (company "battle_bots_ai")
+  )
+  (lib_symbols
+(symbol "custom:Pololu_D36V50F6_BEC"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -6.35 11.43 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Pololu_D36V50F6_BEC" (at 6.35 11.43 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "https://www.pololu.com/product/4092" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Pololu 6V, 5.5A Step-Down Voltage Regulator D36V50F6, direct-wire interface for high-current VIN/VOUT/GND" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Pololu_D36V50F6_BEC_1_1"
+      (rectangle (start -7.62 10.16) (end 7.62 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))
+      (pin passive line (at -10.16 7.62 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -10.16 -10.16 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 7.62 180) (length 2.54) (name "VOUT" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 -10.16 180) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -10.16 2.54 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 2.54 180) (length 2.54) (name "PG" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+    )
+  )
+(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+  (text "External BEC module and filtered receiver branch. The WEKA 5V regulator is not tied to SERVO_6V or RX_6V."
+    (at 15.00 15.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "e019fc95-3c6a-5392-986c-e613e3212c8b")
+  )
+  (symbol
+    (lib_id "custom:Pololu_D36V50F6_BEC")
+    (at 91.44 46.99 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "62668cfd-7f00-5fba-9058-2cad4d79f910")
+    (property "Reference" "J5"
+      (at 91.44 41.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "POLOLU_D36V50F6_6V_5P5A_BEC"
+      (at 91.44 52.07 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x06_P4.8mm_D1.25mm_OD2.3mm_Relief2x"
+      (at 91.44 46.99 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.pololu.com/product/4092"
+      (at 91.44 46.99 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Named-pin direct-wire BEC interface: VIN, GND, VOUT, GND, EN, PG. Use flexible wire for VIN/VOUT/GND current; EN/PG may be left as low-current leads/test wiring."
+      (at 91.44 46.99 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "b01e98ef-9182-5a50-b719-eb01f9dcd01f")
+    )
+    (pin "2"
+      (uuid "a3823eb7-b88e-560b-b69e-3976d9f0e75e")
+    )
+    (pin "3"
+      (uuid "83072c2d-4b37-5502-86ec-2c71ee31535a")
+    )
+    (pin "4"
+      (uuid "b14634ce-03d4-5422-ac22-8b8b4264ef92")
+    )
+    (pin "5"
+      (uuid "4955cb67-d3e4-5f5a-b6f7-7e226642f5eb")
+    )
+    (pin "6"
+      (uuid "9b4d27de-838a-522f-b1ce-9ab02657925e")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J5") (unit 1))))
+  )
+  (wire
+    (pts (xy 81.28 39.37) (xy 66.04 39.37))
+    (stroke (width 0) (type solid))
+    (uuid "d024f0f1-b676-543d-b2fe-7d15689eafe9")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 66.04 39.37 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "5f8e6c20-f77f-53ca-8f53-70d9fef40931")
+  )
+  (wire
+    (pts (xy 81.28 57.15) (xy 66.04 57.15))
+    (stroke (width 0) (type solid))
+    (uuid "2eca667f-ae83-5a06-b6a9-2157a1d8d5eb")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 66.04 57.15 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "b8416dca-fddb-5a71-811b-bd882d3775fe")
+  )
+  (wire
+    (pts (xy 81.28 44.45) (xy 66.04 44.45))
+    (stroke (width 0) (type solid))
+    (uuid "e9d406b2-24d1-5510-9c0f-3b5f4a42de70")
+  )
+  (global_label "BEC_EN" (shape passive)
+    (at 66.04 44.45 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "0f901b59-c97b-591b-842c-0cfd19606c97")
+  )
+  (wire
+    (pts (xy 101.60 39.37) (xy 116.84 39.37))
+    (stroke (width 0) (type solid))
+    (uuid "5cd01c0e-ff44-5a5b-b5e6-edce7a74c666")
+  )
+  (global_label "SERVO_6V" (shape passive)
+    (at 116.84 39.37 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "3ae2800d-6094-5c32-81b1-fa5e9d48e424")
+  )
+  (wire
+    (pts (xy 101.60 57.15) (xy 116.84 57.15))
+    (stroke (width 0) (type solid))
+    (uuid "6dd14b4d-0b56-5a35-abcf-b8ba4306aa75")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 116.84 57.15 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "2831ac5f-4529-51cd-be83-76f960739544")
+  )
+  (wire
+    (pts (xy 101.60 44.45) (xy 116.84 44.45))
+    (stroke (width 0) (type solid))
+    (uuid "09f7adcd-c3b4-5d89-9eb2-d4874095d27d")
+  )
+  (global_label "BEC_PG" (shape passive)
+    (at 116.84 44.45 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "a067ff63-7d3c-503e-88a0-bcd0f66eb73a")
+  )
+  (text "J5 uses the shared custom Pololu_D36V50F6_BEC symbol so VIN/VOUT/GND/EN/PG are named in the schematic. The footprint is direct solder-wire pads so the 6V servo rail does not depend on a single 0.1 inch header pin."
+    (at 15.00 31.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "62f8d725-9a83-54aa-9b6e-1d2db3a56731")
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 132.08 48.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d81b18c2-fef5-5c53-9956-29b51949077f")
+    (property "Reference" "FB1"
+      (at 132.08 43.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0R_OR_FERRITE"
+      (at 132.08 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+      (at 132.08 48.26 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 132.08 48.26 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "0R jumper or ferrite-bead option"
+      (at 132.08 48.26 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "a20ac1d3-62eb-516f-97ec-31f38f73b767")
+    )
+    (pin "2"
+      (uuid "9efa9d49-1685-5093-bdf3-0ed44d479f0a")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "FB1") (unit 1))))
+  )
+  (wire
+    (pts (xy 132.08 52.07) (xy 119.38 52.07))
+    (stroke (width 0) (type solid))
+    (uuid "97d2c531-fe3a-5c2c-891d-506ff50f863f")
+  )
+  (global_label "SERVO_6V" (shape passive)
+    (at 119.38 52.07 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "2d8ab61b-fe80-588c-865b-86779bc493af")
+  )
+  (wire
+    (pts (xy 132.08 44.45) (xy 119.38 44.45))
+    (stroke (width 0) (type solid))
+    (uuid "113ad885-dfa3-5418-a9d8-f70d23d7048a")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 119.38 44.45 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "51bb76db-9221-564b-9aa3-fadfd57bb2e5")
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 154.94 49.53 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "61869424-d4ed-5e3c-bb73-6ec0fa0fcc2e")
+    (property "Reference" "C3"
+      (at 154.94 44.45 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1000uF_10V_LOW_ESR"
+      (at 154.94 54.61 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+      (at 154.94 49.53 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 154.94 49.53 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Decoupling/bulk capacitor"
+      (at 154.94 49.53 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "400e5f74-ca98-5fef-ab3f-14739afc44a1")
+    )
+    (pin "2"
+      (uuid "ac34403a-fab9-5e4a-891b-acfe6b1c4119")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "C3") (unit 1))))
+  )
+  (wire
+    (pts (xy 154.94 53.34) (xy 142.24 53.34))
+    (stroke (width 0) (type solid))
+    (uuid "33025909-7ecc-5778-b892-3749b7e9aafb")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 142.24 53.34 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "f5dd15d2-ca94-52e6-9eac-4f76efe93a28")
+  )
+  (wire
+    (pts (xy 154.94 45.72) (xy 142.24 45.72))
+    (stroke (width 0) (type solid))
+    (uuid "d3a081c2-43d0-5f8f-a55f-022631d20878")
+  )
+  (global_label "SERVO_6V" (shape passive)
+    (at 142.24 45.72 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "e733ddc4-7d96-5f88-8b04-b690aee0c76d")
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 175.26 49.53 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5b31f67c-e157-5b49-99a4-e6ff04fe066d")
+    (property "Reference" "C4"
+      (at 175.26 44.45 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100nF_10V"
+      (at 175.26 54.61 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 175.26 49.53 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 175.26 49.53 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Decoupling/bulk capacitor"
+      (at 175.26 49.53 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "9320e6cb-58a5-5857-a976-ed73bb07d706")
+    )
+    (pin "2"
+      (uuid "e3c95974-e8d5-5a36-9574-4edcc29fc46c")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "C4") (unit 1))))
+  )
+  (wire
+    (pts (xy 175.26 53.34) (xy 162.56 53.34))
+    (stroke (width 0) (type solid))
+    (uuid "7054e8f5-3876-5812-82c5-675940768c5b")
+  )
+  (global_label "SERVO_6V" (shape passive)
+    (at 162.56 53.34 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "7cf34736-6a40-576f-8f42-fdeead39a673")
+  )
+  (wire
+    (pts (xy 175.26 45.72) (xy 162.56 45.72))
+    (stroke (width 0) (type solid))
+    (uuid "70413955-e3d6-5b4c-83c7-9c61eef6c48b")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 162.56 45.72 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "8fbc783d-3388-5209-b688-159c0b68c870")
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 154.94 80.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "87589277-78e9-59b1-b304-797dee965c6c")
+    (property "Reference" "C5"
+      (at 154.94 74.93 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "220uF_10V_RX"
+      (at 154.94 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+      (at 154.94 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 154.94 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Decoupling/bulk capacitor"
+      (at 154.94 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "381a111f-bed2-5d52-8ab5-e7588a547b32")
+    )
+    (pin "2"
+      (uuid "ec822e81-7ef8-524b-b601-7fa087815e13")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "C5") (unit 1))))
+  )
+  (wire
+    (pts (xy 154.94 83.82) (xy 142.24 83.82))
+    (stroke (width 0) (type solid))
+    (uuid "51657b20-9a33-5207-b0ca-e509dbca3a13")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 142.24 83.82 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "2b75b131-3ea6-57b2-89d3-249f14f2b95d")
+  )
+  (wire
+    (pts (xy 154.94 76.20) (xy 142.24 76.20))
+    (stroke (width 0) (type solid))
+    (uuid "8bc8fbb0-652d-5b42-bf47-8b7fe2389fd3")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 142.24 76.20 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "994dc7bd-240e-55f5-b157-eef7af7fa5c4")
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 175.26 80.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8427f0fc-673d-5752-b473-78adb776797c")
+    (property "Reference" "C6"
+      (at 175.26 74.93 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100nF_RX"
+      (at 175.26 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 175.26 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 175.26 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Decoupling/bulk capacitor"
+      (at 175.26 80.01 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "abedc003-af2c-5aa8-a266-baf5702723f8")
+    )
+    (pin "2"
+      (uuid "e1835671-96d2-5a27-a79b-b2a0bff3ba5b")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "C6") (unit 1))))
+  )
+  (wire
+    (pts (xy 175.26 83.82) (xy 162.56 83.82))
+    (stroke (width 0) (type solid))
+    (uuid "e4a1ea41-da14-5afa-9087-6c96de147a49")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 162.56 83.82 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "a0e0dbab-5285-5707-887e-e90f4828c9d9")
+  )
+  (wire
+    (pts (xy 175.26 76.20) (xy 162.56 76.20))
+    (stroke (width 0) (type solid))
+    (uuid "0bc0b5b6-9f95-5a2f-a3cd-0246515ecebb")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 162.56 76.20 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "e4a83d45-d325-5180-a165-e69c55adaef0")
+  )
+  (text "BEC current target: >=4A usable headroom. Pololu module is 6V fixed, typical max 5.5A; actual continuous current depends on thermal mounting and airflow."
+    (at 15.00 111.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "4855997b-0bc2-54e5-874c-14a1c7980bde")
+  )
+  (sheet_instances
+    (path "/270cf411-9e6e-5cf2-886a-ff6c8c33bba6/" (page "4"))
+  )
+)

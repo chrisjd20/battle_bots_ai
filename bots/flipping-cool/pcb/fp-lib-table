@@ -1,0 +1,13 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Connector_AMASS")(type "KiCad")(uri "/usr/share/kicad/footprints/Connector_AMASS.pretty")(options "")(descr "AMASS connectors"))
+  (lib (name "Connector_JST")(type "KiCad")(uri "/usr/share/kicad/footprints/Connector_JST.pretty")(options "")(descr "JST connectors"))
+  (lib (name "Connector_PinHeader_2.54mm")(type "KiCad")(uri "/usr/share/kicad/footprints/Connector_PinHeader_2.54mm.pretty")(options "")(descr "2.54mm pin headers"))
+  (lib (name "Capacitor_SMD")(type "KiCad")(uri "/usr/share/kicad/footprints/Capacitor_SMD.pretty")(options "")(descr "SMD capacitors"))
+  (lib (name "Capacitor_THT")(type "KiCad")(uri "/usr/share/kicad/footprints/Capacitor_THT.pretty")(options "")(descr "THT capacitors"))
+  (lib (name "Resistor_SMD")(type "KiCad")(uri "/usr/share/kicad/footprints/Resistor_SMD.pretty")(options "")(descr "SMD resistors"))
+  (lib (name "TestPoint")(type "KiCad")(uri "/usr/share/kicad/footprints/TestPoint.pretty")(options "")(descr "Test points"))
+  (lib (name "Fuse")(type "KiCad")(uri "/usr/share/kicad/footprints/Fuse.pretty")(options "")(descr "Fuse footprints"))
+  (lib (name "Diode_SMD")(type "KiCad")(uri "/usr/share/kicad/footprints/Diode_SMD.pretty")(options "")(descr "SMD diode footprints"))
+  (lib (name "Connector_Wire")(type "KiCad")(uri "/usr/share/kicad/footprints/Connector_Wire.pretty")(options "")(descr "Wire solder pads"))
+)

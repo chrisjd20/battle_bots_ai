@@ -124,6 +124,96 @@ flippers, electronics, and reserve.
 - Future power system should provide a clean `5V` to `6V` servo / radio rail
   with at least `4 A` real headroom
 
+## Optional electrical growth parts
+
+These parts are included in the Rev A schematic as low-risk expansion options.
+They are not required for the first driving/flipping configuration.
+
+### Pit/debug header
+
+- Qty: `1`
+- Schematic ref: `J44`
+- Suggested part: `1x6 2.54 mm pin header` or direct solder pads
+- Purpose:
+  - fast pit checks for battery switched rail, servo rail, receiver rail, and
+    CRSF test lines
+  - logic-analyzer access without probing small receiver pins
+- Important limit:
+  - debug only; not a high-current output
+
+### Optional 3.3 V regulator
+
+- Qty: `1 optional`
+- Schematic ref: `J45`
+- Suggested part: `Pololu D24V5F3`
+- Critical specs:
+  - `3.3 V` fixed output
+  - `500 mA` typical max output current
+  - `3.4 V to 36 V` input range for the 3.3 V version
+  - about `13 x 10 x 3 mm`
+  - about `0.6 g` without headers
+- Why this part:
+  - handles the switched 2S LiHV rail directly
+  - gives future sensors/MCUs a real 3.3 V rail
+  - small enough that adding the footprint does not distort packaging
+- Important limits:
+  - no reverse-voltage protection
+  - not for servos, receiver power, or high-current accessories
+
+### Future MCU tap headers
+
+- Qty: `3 optional`
+- Schematic refs: `J46`, `J47`, `J48`
+- Suggested part: `1x6 2.54 mm pin headers` or direct solder pads
+- Purpose:
+  - future telemetry, status LEDs, I2C sensors, rail sensing, and command
+    observation
+- Important limit:
+  - PWM pins are receiver-driven taps in Rev A. A future MCU must leave them
+    high impedance unless the wiring is intentionally changed.
+
+### I2C sensor connector
+
+- Qty: `1 optional`
+- Schematic ref: `J49`
+- Suggested part: `JST-SH 1.0 mm 4-pin horizontal connector`
+- Pin order: `GND`, `AUX_3V3`, `SDA`, `SCL`
+- Purpose:
+  - future IMU/orientation sensor or other 3.3 V I2C sensor
+- Supporting parts:
+  - `R46`, `R47`: `4.7 k` I2C pull-ups, marked DNP unless the installed sensor
+    stack lacks pull-ups
+
+### RGB status LED
+
+- Qty: `1 optional`
+- Schematic ref: `J50`
+- Suggested part: common-anode RGB LED, off-board
+- Supporting parts:
+  - `R50`, `R51`, `R52`: `330 ohm` channel current-limit resistors
+- Purpose:
+  - future multi-color status indication for armed/link/low-battery/failsafe
+    states
+- Important limit:
+  - requires `AUX_3V3` and a future MCU or equivalent low-side control
+
+### Analog rail sense
+
+- Schematic refs: `R40`-`R45`
+- Values:
+  - high side: `100 k`
+  - low side: `47 k`
+- Sense nets:
+  - `ADC_VBAT`
+  - `ADC_SERVO_6V`
+  - `ADC_RX_6V`
+- Purpose:
+  - future firmware can detect battery sag, servo-rail brownout, or receiver
+    rail problems
+- Scaling:
+  - full 2S LiHV pack at about `8.7 V` reads about `2.8 V`
+  - a `6.0 V` rail reads about `1.9 V`
+
 ## Immediate next steps
 
 1. Build a top-down packaging sketch or simple CAD layout around the locked
@@ -143,7 +233,8 @@ flippers, electronics, and reserve.
 - Exact cross-shaft lengths and retention method
 - Exact hub / adapter choice between motor shaft and wheels
 - Exact flipper face profile and replaceable lip design
-- Exact BEC, ESC, receiver, switch, and capacitor part numbers
+- Exact physical population choice for optional growth headers, 3.3 V module,
+  I2C sensor, future MCU, and RGB status LED
 - Exact screw lengths, inserts, and fastener counts
 
 ## Change control

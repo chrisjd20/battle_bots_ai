@@ -1,0 +1,135 @@
+(kicad_sch
+  (version 20250114)
+  (generator "codex")
+  (generator_version "9.0")
+  (uuid "639db8f1-f7e7-58f0-b9c0-b246318af417")
+  (paper "A4")
+  (title_block
+    (title "Flipping Cool Rev A - Power Interconnect Root")
+    (date "2026-05-08")
+    (rev "A")
+    (company "battle_bots_ai")
+  )
+  (lib_symbols
+  )
+  (sheet
+    (at 20.00 25.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "c7076af1-9a31-5690-879f-805d8afe37e9")
+    (property "Sheetname" "00_system_overview"
+      (at 20.00 24.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "00_system_overview.kicad_sch"
+      (at 20.00 48.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/c7076af1-9a31-5690-879f-805d8afe37e9" (page "2"))))
+  )
+  (sheet
+    (at 76.00 25.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "25f9336b-54c9-532f-bf08-fa3253fd6600")
+    (property "Sheetname" "01_battery_safety"
+      (at 76.00 24.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "01_battery_safety.kicad_sch"
+      (at 76.00 48.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/25f9336b-54c9-532f-bf08-fa3253fd6600" (page "3"))))
+  )
+  (sheet
+    (at 132.00 25.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "270cf411-9e6e-5cf2-886a-ff6c8c33bba6")
+    (property "Sheetname" "02_power_rails"
+      (at 132.00 24.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "02_power_rails.kicad_sch"
+      (at 132.00 48.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/270cf411-9e6e-5cf2-886a-ff6c8c33bba6" (page "4"))))
+  )
+  (sheet
+    (at 20.00 62.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "ec305eb4-293a-58dd-b3b3-f8cf96ed735b")
+    (property "Sheetname" "03_receiver_pwm"
+      (at 20.00 61.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "03_receiver_pwm.kicad_sch"
+      (at 20.00 85.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/ec305eb4-293a-58dd-b3b3-f8cf96ed735b" (page "5"))))
+  )
+  (sheet
+    (at 76.00 62.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "f676580d-4df7-5cbb-b7ae-69fa9ea8d19d")
+    (property "Sheetname" "04_drive_esc"
+      (at 76.00 61.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "04_drive_esc.kicad_sch"
+      (at 76.00 85.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/f676580d-4df7-5cbb-b7ae-69fa9ea8d19d" (page "6"))))
+  )
+  (sheet
+    (at 132.00 62.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "40b0b327-58ad-549e-b8db-c2d2cfb41215")
+    (property "Sheetname" "05_weapon_servos"
+      (at 132.00 61.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "05_weapon_servos.kicad_sch"
+      (at 132.00 85.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/40b0b327-58ad-549e-b8db-c2d2cfb41215" (page "7"))))
+  )
+  (sheet
+    (at 20.00 99.00)
+    (size 48.00 22.00)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid "f81cc6b7-8d4a-56f1-ac66-4ebad2f24264")
+    (property "Sheetname" "06_expansion_test"
+      (at 20.00 98.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "06_expansion_test.kicad_sch"
+      (at 20.00 122.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances (project "flipping-cool" (path "/f81cc6b7-8d4a-56f1-ac66-4ebad2f24264" (page "8"))))
+  )
+  (text "Rev A schematic-only KiCad project. Open child sheets for validated pinouts, rails, load budget, and off-board module source URLs."
+    (at 20.00 135.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "ab712a33-c366-527d-8a7b-eb34499fe55e")
+  )
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

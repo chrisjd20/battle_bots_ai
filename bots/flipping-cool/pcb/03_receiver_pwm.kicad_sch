@@ -1,0 +1,400 @@
+(kicad_sch
+  (version 20250114)
+  (generator "codex")
+  (generator_version "9.0")
+  (uuid "6af81081-e699-5832-8d27-4892f28d9760")
+  (paper "A4")
+  (title_block
+    (title "Flipping Cool Rev A - Receiver PWM")
+    (date "2026-05-08")
+    (rev "A")
+    (company "battle_bots_ai")
+  )
+  (lib_symbols
+(symbol "custom:Matek_ELRS_R24_P6"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -6.35 15.24 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Matek_ELRS_R24_P6" (at 6.35 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "https://www.mateksys.com/?portfolio=elrs-r24-p6" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Matek ELRS-R24-P6 6-channel PWM Receiver" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Matek_ELRS_R24_P6_1_1"
+      (rectangle (start -7.62 12.7) (end 7.62 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))
+      (pin passive line (at -10.16 10.16 0) (length 2.54) (name "4-9V_IN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -10.16 -10.16 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 10.16 180) (length 2.54) (name "CH1" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 7.62 180) (length 2.54) (name "CH2" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 5.08 180) (length 2.54) (name "CH3" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 2.54 180) (length 2.54) (name "CH4" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 0 180) (length 2.54) (name "CH5" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 -2.54 180) (length 2.54) (name "CH6" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+    )
+  )
+(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+  (text "Matek ELRS-R24-P6 PWM receiver interface. Receiver powered from filtered RX_6V, not from WEKA 5V BEC."
+    (at 15.00 15.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "ad432f7a-9554-5b43-a6e9-1de291c5e404")
+  )
+  (symbol
+    (lib_id "custom:Matek_ELRS_R24_P6")
+    (at 73.66 41.91 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "64503b47-89f0-519d-a670-6106bda30832")
+    (property "Reference" "J10"
+      (at 73.66 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MATEK_ELRS_R24_P6_PWM"
+      (at 73.66 46.99 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+      (at 73.66 41.91 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.mateksys.com/?portfolio=elrs-r24-p6"
+      (at 73.66 41.91 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Named-pin ELRS receiver interface: 4-9V_IN, GND, CH1-CH6."
+      (at 73.66 41.91 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "887e7c0c-0c2a-51c6-a67b-fde283d32fe4")
+    )
+    (pin "2"
+      (uuid "38566d0f-ef45-5531-b8b1-440b79bf4837")
+    )
+    (pin "3"
+      (uuid "3dccffb2-0b7e-5b8c-abf8-59f03bb1a88b")
+    )
+    (pin "4"
+      (uuid "04afffed-1b83-5048-9263-75b1ca8d7ac1")
+    )
+    (pin "5"
+      (uuid "f2d902b7-b70e-5e87-bde8-3506ece3f182")
+    )
+    (pin "6"
+      (uuid "7f90666c-706c-562f-ba0f-3d37d4366c53")
+    )
+    (pin "7"
+      (uuid "cbee9864-4ac3-5f42-8e36-8f7abba90467")
+    )
+    (pin "8"
+      (uuid "4b8ee15c-175e-5e98-b83c-104c3183c7aa")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J10") (unit 1))))
+  )
+  (wire
+    (pts (xy 63.50 31.75) (xy 48.26 31.75))
+    (stroke (width 0) (type solid))
+    (uuid "daabd79d-53da-5b9b-b978-c23d2a1c8801")
+  )
+  (global_label "RX_6V" (shape passive)
+    (at 48.26 31.75 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "12c7030e-7e70-5bd2-bf43-05cf06d40ae8")
+  )
+  (wire
+    (pts (xy 63.50 52.07) (xy 48.26 52.07))
+    (stroke (width 0) (type solid))
+    (uuid "d20f0597-4c2a-5a1b-88b4-85d383e2269c")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 48.26 52.07 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "5faa3841-8abd-5715-be1e-d078938deece")
+  )
+  (wire
+    (pts (xy 83.82 31.75) (xy 99.06 31.75))
+    (stroke (width 0) (type solid))
+    (uuid "17ec2e03-b152-5a10-b14a-59ff59b2b387")
+  )
+  (global_label "PWM_DRIVE_LEFT" (shape passive)
+    (at 99.06 31.75 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "3278306f-e45c-500c-9b34-10d0ed4bdc33")
+  )
+  (wire
+    (pts (xy 83.82 34.29) (xy 99.06 34.29))
+    (stroke (width 0) (type solid))
+    (uuid "3db43b7a-b851-5b67-bd5d-44d5a072e287")
+  )
+  (global_label "PWM_DRIVE_RIGHT" (shape passive)
+    (at 99.06 34.29 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "63b9ce60-3c70-5fcd-ab72-e0e8fb021d89")
+  )
+  (wire
+    (pts (xy 83.82 36.83) (xy 99.06 36.83))
+    (stroke (width 0) (type solid))
+    (uuid "bb8469dd-12f5-5b73-b50f-1f6133f4f59b")
+  )
+  (global_label "PWM_WEAPON_FR" (shape passive)
+    (at 99.06 36.83 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "fd8f1034-52db-5235-81a0-9981f28a0e2f")
+  )
+  (wire
+    (pts (xy 83.82 39.37) (xy 99.06 39.37))
+    (stroke (width 0) (type solid))
+    (uuid "f3772458-652a-5140-8655-289e62a07c72")
+  )
+  (global_label "PWM_WEAPON_LR" (shape passive)
+    (at 99.06 39.37 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "65f20a2d-18b1-52b4-96e2-9d2c7a246419")
+  )
+  (wire
+    (pts (xy 83.82 41.91) (xy 99.06 41.91))
+    (stroke (width 0) (type solid))
+    (uuid "a595eeff-0627-5ebd-9048-6e62b91a5a93")
+  )
+  (global_label "PWM_SPARE_5" (shape passive)
+    (at 99.06 41.91 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "7e80631f-c37c-5fd5-a237-aeedc283ae0a")
+  )
+  (wire
+    (pts (xy 83.82 44.45) (xy 99.06 44.45))
+    (stroke (width 0) (type solid))
+    (uuid "c67ec99d-a003-58f7-b8a6-9fb3de6ad745")
+  )
+  (global_label "PWM_SPARE_6" (shape passive)
+    (at 99.06 44.45 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "51775fe5-bfa4-5528-8f4d-3fed4c71ec95")
+  )
+  (text "J10 uses the shared custom Matek_ELRS_R24_P6 symbol so CH1-CH6 and the 4-9V input are explicit."
+    (at 115.00 29.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "61151240-8b7d-54ac-8be9-591945f10a11")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 73.66 74.93 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9cb16c58-a3d4-54c6-8d99-ff0eb1584e87")
+    (property "Reference" "J11"
+      (at 73.66 69.85 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R24_P6_VBAT_TELEMETRY_SENSE"
+      (at 73.66 80.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 73.66 74.93 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.mateksys.com/?portfolio=elrs-r24-p6"
+      (at 73.66 74.93 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Optional VBAT sense to R24-P6 VBat pad, 34V max. Sense only; not receiver power."
+      (at 73.66 74.93 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "82be9874-0b64-56df-a1c0-7c4502f45c64")
+    )
+    (pin "2"
+      (uuid "1f3ffa3f-8f79-56db-82a2-3e8d4b4bd926")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J11") (unit 1))))
+  )
+  (wire
+    (pts (xy 68.58 74.93) (xy 53.34 74.93))
+    (stroke (width 0) (type solid))
+    (uuid "64789885-a66b-52a5-93cf-47d4302c820f")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 53.34 74.93 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "764c94e8-31ed-581a-9457-fbec1710a760")
+  )
+  (wire
+    (pts (xy 68.58 77.47) (xy 53.34 77.47))
+    (stroke (width 0) (type solid))
+    (uuid "5fc6cb4f-1648-5f52-b0dd-e63d325ffce7")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 53.34 77.47 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "a231d461-8b74-594f-bb78-cae32d9af1c4")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 79.00 74.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "05ea3b86-29e6-5a4b-9516-5477dbacc2f4")
+  )
+  (text "Channel convention: CH1 left drive, CH2 right drive, CH3 front/rear weapon axis, CH4 left/right weapon axis, CH5/CH6 spare. Set ELRS failsafe to stop drive and center/hold weapon commands safely."
+    (at 15.00 98.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "ce8adef0-ba5d-5b56-81b4-73deac936c55")
+  )
+  (sheet_instances
+    (path "/ec305eb4-293a-58dd-b3b3-f8cf96ed735b/" (page "5"))
+  )
+)

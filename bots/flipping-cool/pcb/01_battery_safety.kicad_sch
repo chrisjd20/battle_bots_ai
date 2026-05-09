@@ -1,0 +1,1267 @@
+(kicad_sch
+  (version 20250114)
+  (generator "codex")
+  (generator_version "9.0")
+  (uuid "5891f558-34f1-526f-908d-d6994faba6cc")
+  (paper "A4")
+  (title_block
+    (title "Flipping Cool Rev A - Battery Safety")
+    (date "2026-05-08")
+    (rev "A")
+    (company "battle_bots_ai")
+  )
+  (lib_symbols
+(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Connector_Generic:Conn_01x03"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x03_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:D_TVS"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode TVS thyrector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_TVS_0_1"
+			(polyline
+				(pts
+					(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_TVS_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+  )
+  (text "Battery, disconnect, visible power indication, and raw pack sense. Removing J2 must remove all power from drive, weapon servos, receiver, and power LED."
+    (at 15.00 15.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "c325df97-39c2-52fc-83de-6b566c8c1480")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 64.77 35.56 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5609352e-43b2-5eb0-a672-95e5754b8a75")
+    (property "Reference" "J1"
+      (at 64.77 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "XT30_BATTERY_IN_GNB4502S80AHV"
+      (at 64.77 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical"
+      (at 64.77 35.56 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.gaoneng.shop/products/gaoneng-gnb-lihv-2s-7-6v-450mah-80c-xt30-lipo-battery"
+      (at 64.77 35.56 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "2S LiHV battery input, XT30, pin 1 positive, pin 2 negative"
+      (at 64.77 35.56 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "42bced37-e282-5a3d-940a-4bdb0cb3c041")
+    )
+    (pin "2"
+      (uuid "7b918e5a-8ff4-56e4-8ffa-22347d3d6165")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J1") (unit 1))))
+  )
+  (wire
+    (pts (xy 59.69 35.56) (xy 44.45 35.56))
+    (stroke (width 0) (type solid))
+    (uuid "310331d2-8790-5822-bbad-77641c31b8d2")
+  )
+  (global_label "VBAT_RAW" (shape passive)
+    (at 44.45 35.56 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "cc810e2e-3673-5a94-b495-669b33e08d9e")
+  )
+  (wire
+    (pts (xy 59.69 38.10) (xy 44.45 38.10))
+    (stroke (width 0) (type solid))
+    (uuid "4262bb42-3d2a-5eab-80e5-4c001cb19637")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 44.45 38.10 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "118b47fd-3571-5822-847a-41f6716082be")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 70.00 34.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "0d5078b2-e07b-5b6a-9acd-54073a5acd70")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 64.77 58.42 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "207ddd73-ae64-58b6-a32e-23fab8431b5d")
+    (property "Reference" "J2"
+      (at 64.77 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "REMOVABLE_LINK_OR_RATED_SWITCH"
+      (at 64.77 63.50 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
+      (at 64.77 58.42 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.sparc.tools/SPARC_Robot_Construction_Specifications_v1.6.pdf"
+      (at 64.77 58.42 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Manual mechanical disconnect; short pin 1 to pin 2 only when armed"
+      (at 64.77 58.42 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "3cf4757e-a48f-563b-be03-79c4972e640d")
+    )
+    (pin "2"
+      (uuid "cd905cc9-e812-54a7-9dba-745decc33171")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J2") (unit 1))))
+  )
+  (wire
+    (pts (xy 59.69 58.42) (xy 44.45 58.42))
+    (stroke (width 0) (type solid))
+    (uuid "4540ff4e-4e1d-55de-8c15-1ffdc4ff6a86")
+  )
+  (global_label "VBAT_RAW" (shape passive)
+    (at 44.45 58.42 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "8a2d2ba1-59a2-5adb-b071-12e36c564c4f")
+  )
+  (wire
+    (pts (xy 59.69 60.96) (xy 44.45 60.96))
+    (stroke (width 0) (type solid))
+    (uuid "d3461559-b06c-57c7-aef0-f6babce2a415")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 44.45 60.96 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "b8756339-9bda-5f72-86f3-7d6c138773e7")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 70.00 57.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "3db8b267-fb4a-5757-92bc-533167a28c77")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 64.77 82.55 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e165217c-6557-5133-bd11-d528529b45db")
+    (property "Reference" "J3"
+      (at 64.77 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "VISIBLE_POWER_LED_CURRENT_LIMITED"
+      (at 64.77 87.63 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+      (at 64.77 82.55 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.sparc.tools/SPARC_Robot_Construction_Specifications_v1.6.pdf"
+      (at 64.77 82.55 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Visible non-flashing LED output; pin 1 is current-limited on-board by R1, pin 2 is ground"
+      (at 64.77 82.55 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "3f923997-b38c-5ca6-a885-f47d02d857dc")
+    )
+    (pin "2"
+      (uuid "cf60d128-7786-54a6-8dc5-8e51597e7d4e")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J3") (unit 1))))
+  )
+  (wire
+    (pts (xy 59.69 82.55) (xy 44.45 82.55))
+    (stroke (width 0) (type solid))
+    (uuid "0d8c2793-3a38-51ec-983a-c8f171c55b00")
+  )
+  (label "PWR_LED_A"
+    (at 44.45 82.55 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "5f6d9d6b-72a7-5f29-ae81-36f8ad39e2d1")
+  )
+  (wire
+    (pts (xy 59.69 85.09) (xy 44.45 85.09))
+    (stroke (width 0) (type solid))
+    (uuid "88c020eb-fc8b-5406-89b0-698994dc7dc2")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 44.45 85.09 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "38a8cf08-b13c-5fdc-8583-1b2d484414bc")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 70.00 81.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "4d60d17e-5cad-5879-8fa5-b31f4eeb3c46")
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 134.62 87.63 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "40c731cb-1ee6-5e54-84cc-52eb6881951b")
+    (property "Reference" "R1"
+      (at 134.62 82.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1k_LED_LIMIT"
+      (at 134.62 92.71 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 134.62 87.63 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 134.62 87.63 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "On-board current limit for visible main-power LED"
+      (at 134.62 87.63 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "f7fb4860-e95b-5409-bc76-52c95ff21cbf")
+    )
+    (pin "2"
+      (uuid "d76c36a8-188a-53ea-8e02-18b017c5fe51")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "R1") (unit 1))))
+  )
+  (wire
+    (pts (xy 134.62 91.44) (xy 121.92 91.44))
+    (stroke (width 0) (type solid))
+    (uuid "4fea12e1-f303-539b-916f-106ff3a09022")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 121.92 91.44 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "aaa85a9e-4552-58f7-99cd-fdd4310e7a83")
+  )
+  (wire
+    (pts (xy 134.62 83.82) (xy 121.92 83.82))
+    (stroke (width 0) (type solid))
+    (uuid "257e4329-a5e8-5a83-915f-90fcf29d7231")
+  )
+  (label "PWR_LED_A"
+    (at 121.92 83.82 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "6b4ebbee-c3fd-575c-9b9d-5881357ada1a")
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x03")
+    (at 64.77 105.41 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "30f6968d-1bba-5ecb-815b-b71a47b32c76")
+    (property "Reference" "J4"
+      (at 64.77 100.33 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "2S_BALANCE_SENSE_NO_CHARGE"
+      (at 64.77 110.49 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+      (at 64.77 105.41 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.gaoneng.shop/products/gaoneng-gnb-lihv-2s-7-6v-450mah-80c-xt30-lipo-battery"
+      (at 64.77 105.41 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Optional unpopulated JST-XH sense header only; do not use for charge current"
+      (at 64.77 105.41 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "93184703-a577-581b-8481-64fbd952ff6e")
+    )
+    (pin "2"
+      (uuid "2d6db21a-b9db-5aaa-93c6-9f62500a9c42")
+    )
+    (pin "3"
+      (uuid "df16fd10-c4f5-5553-989e-39a48244d21a")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "J4") (unit 1))))
+  )
+  (wire
+    (pts (xy 59.69 102.87) (xy 44.45 102.87))
+    (stroke (width 0) (type solid))
+    (uuid "4af3946d-f419-50b3-83d1-5cc8d3e5ca5e")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 44.45 102.87 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "be0fe78b-0e8a-5632-bbef-ea8b28bf829d")
+  )
+  (wire
+    (pts (xy 59.69 105.41) (xy 44.45 105.41))
+    (stroke (width 0) (type solid))
+    (uuid "36aadac0-8e75-526e-95de-508b1bb46ead")
+  )
+  (global_label "CELL1_SENSE" (shape passive)
+    (at 44.45 105.41 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "ddb75571-d5d0-5d6f-9e13-f0c445ab477f")
+  )
+  (wire
+    (pts (xy 59.69 107.95) (xy 44.45 107.95))
+    (stroke (width 0) (type solid))
+    (uuid "cb187f83-3e6b-5c8a-bfc4-a955ba915e2b")
+  )
+  (global_label "VBAT_RAW" (shape passive)
+    (at 44.45 107.95 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "6ba3ae75-709c-5fa3-aa73-c4d1435795da")
+  )
+  (text "Pin 1 at top; labels at each pin are the harness source of truth."
+    (at 70.00 105.00 0)
+    (effects (font (size 1.00 1.00)) (justify left top))
+    (uuid "a45b6981-348b-59e5-b8bc-f366ae016a8b")
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 134.62 55.88 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ce0e40c7-73e2-5ca6-9af0-15d0072f41f0")
+    (property "Reference" "C1"
+      (at 134.62 50.80 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "470uF_16V_LOW_ESR"
+      (at 134.62 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+      (at 134.62 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 134.62 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Decoupling/bulk capacitor"
+      (at 134.62 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "62949b44-9c82-5f9a-9c8b-f6da3b24cfbf")
+    )
+    (pin "2"
+      (uuid "d1fab6ed-efb3-5ef2-991d-6ae490a56386")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "C1") (unit 1))))
+  )
+  (wire
+    (pts (xy 134.62 59.69) (xy 121.92 59.69))
+    (stroke (width 0) (type solid))
+    (uuid "aa30898b-1339-52d7-97f4-b9bccd6902a5")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 121.92 59.69 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "65699857-82e0-597d-bcfe-4db74ed4f02d")
+  )
+  (wire
+    (pts (xy 134.62 52.07) (xy 121.92 52.07))
+    (stroke (width 0) (type solid))
+    (uuid "fac9d9a7-1d7f-5658-89f3-2535d4f2eb99")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 121.92 52.07 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "28f613c6-8ae6-57ed-899d-180f8f5deb5b")
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 154.94 55.88 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "27f749ef-fc41-5ba1-97da-a70f87d13495")
+    (property "Reference" "C2"
+      (at 154.94 50.80 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100nF_25V"
+      (at 154.94 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 154.94 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 154.94 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Decoupling/bulk capacitor"
+      (at 154.94 55.88 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "5a4bf233-6cb0-5a9a-90c4-f79df111de2b")
+    )
+    (pin "2"
+      (uuid "60a4aefc-c387-5d5a-9307-2c20a1e04597")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "C2") (unit 1))))
+  )
+  (wire
+    (pts (xy 154.94 59.69) (xy 142.24 59.69))
+    (stroke (width 0) (type solid))
+    (uuid "ca3b69a1-d638-5020-ba6a-24b8f48ff84e")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 142.24 59.69 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "d1ab9570-43ba-5bcd-bb7d-9aca83810c31")
+  )
+  (wire
+    (pts (xy 154.94 52.07) (xy 142.24 52.07))
+    (stroke (width 0) (type solid))
+    (uuid "7167b283-00d9-5d5b-bbf0-0642f24b37cb")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 142.24 52.07 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "c776134f-ee23-5460-a9b2-9b2ea02df2ad")
+  )
+  (symbol
+    (lib_id "Device:D_TVS")
+    (at 142.24 104.14 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f3238a4c-4933-5283-a17e-136a331cdcb4")
+    (property "Reference" "D1"
+      (at 142.24 99.06 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SMAJ15CA_TVS"
+      (at 142.24 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SMA"
+      (at 142.24 104.14 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.littelfuse.com/products/tvs-diodes/surface-mount/smaj/smaj15ca"
+      (at 142.24 104.14 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (property "Description" "Bidirectional TVS clamp across switched battery rail for ESC/motor transients"
+      (at 142.24 104.14 0)
+      (effects (font (size 1.27 1.27)))
+      (hide yes)
+    )
+    (pin "1"
+      (uuid "ed38b2f7-c4e2-572a-90ce-1ae4e4253d1e")
+    )
+    (pin "2"
+      (uuid "6d0d730b-246f-559a-93cc-521309f579b6")
+    )
+    (instances (project "flipping-cool" (path "/" (reference "D1") (unit 1))))
+  )
+  (wire
+    (pts (xy 138.43 104.14) (xy 125.73 104.14))
+    (stroke (width 0) (type solid))
+    (uuid "7b36729d-7a81-57da-889b-9b52290e81e9")
+  )
+  (global_label "GND_PWR" (shape passive)
+    (at 125.73 104.14 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "89469f8f-40bf-5062-ac10-503422c05c6e")
+  )
+  (wire
+    (pts (xy 146.05 104.14) (xy 158.75 104.14))
+    (stroke (width 0) (type solid))
+    (uuid "efe778c0-6915-5d4e-92ed-4b9c7645ab5f")
+  )
+  (global_label "VBAT_SW" (shape passive)
+    (at 158.75 104.14 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "19d731ac-6878-51af-a1e1-f2dfbc15829c")
+  )
+  (text "D1 is populated protection across VBAT_SW/GND_PWR near J2. Keep battery leads short and strain relieved."
+    (at 110.00 89.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "358237d8-cd2e-5cfd-8351-28359bd85550")
+  )
+  (sheet_instances
+    (path "/25f9336b-54c9-532f-bf08-fa3253fd6600/" (page "3"))
+  )
+)

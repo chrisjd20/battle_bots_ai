@@ -1,0 +1,54 @@
+(kicad_sch
+  (version 20250114)
+  (generator "codex")
+  (generator_version "9.0")
+  (uuid "78a42c86-1725-59ce-a210-b5a347f36604")
+  (paper "A4")
+  (title_block
+    (title "Flipping Cool Rev A - System Overview")
+    (date "2026-05-08")
+    (rev "A")
+    (company "battle_bots_ai")
+  )
+  (lib_symbols
+
+  )
+  (text "Flipping Cool Rev A schematic-only power/interconnect PCB"
+    (at 15.00 18.00 0)
+    (effects (font (size 1.80 1.80)) (justify left top))
+    (uuid "98dab426-513d-59ea-815e-80de74ba4184")
+  )
+  (text "Architecture: 2S LiHV XT30 battery -> manual removable link -> VBAT_SW -> WEKA drive ESC and Pololu D36V50F6 6V BEC. ELRS PWM receiver drives WEKA and two Savox weapon servos. No custom ESC, no required MCU. Optional growth hooks add pit/debug, 3.3V sensor/MCU power, I2C, ADC rail sense, and RGB status LED support."
+    (at 15.00 26.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "91f456d7-633f-5e46-b67c-230e8660950c")
+  )
+  (text "Rail names: VBAT_RAW = battery side of disconnect; VBAT_SW = robot-live switched battery rail; SERVO_6V = external 6V BEC output; RX_6V = filtered receiver branch; AUX_3V3 = optional future logic/sensor rail; GND_PWR = common return."
+    (at 15.00 38.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "b119da12-fe53-5afd-abcd-1850b0a4284a")
+  )
+  (text "Load budget: drive motors 4 x 1.5A stall at 6V = 6A nominal stall reference; weapon servos 2 x 1.4A stall at 6V = 2.8A; BEC target >=4A real headroom, implemented as 6V 5.5A module. 2S directly overvolts 6V motors, so stall duration must be mechanically and operationally limited."
+    (at 15.00 52.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "0c2b6c44-91ab-50f2-a178-ca32f5bd105d")
+  )
+  (text "Validated remote sources: Pololu 3064 motor specs https://www.pololu.com/product/3064/specs ; Savox SH-0255MG+ specs https://www.teamsavox.com/product/sh-0255mgp/ ; GNB4502S80AHV https://www.gaoneng.shop/products/gaoneng-gnb-lihv-2s-7-6v-450mah-80c-xt30-lipo-battery ; SPARC v1.6 https://www.sparc.tools/SPARC_Robot_Construction_Specifications_v1.6.pdf ; Matek ELRS-R24-P6 https://www.mateksys.com/?portfolio=elrs-r24-p6 ; WEKA ESC https://justcuzrobotics.com/products/weka-dual-20-esc-for-brushed-drive ; Pololu D36V50F6 https://www.pololu.com/product/4092 ; Pololu D24V5F3 https://www.pololu.com/product/2842 ; STEMMA QT pin order https://learn.adafruit.com/introducing-adafruit-stemma-qt/technical-specs"
+    (at 15.00 73.00 0)
+    (effects (font (size 1.05 1.05)) (justify left top))
+    (uuid "ac45a776-0bfd-59ba-8175-8d2d23b6c3f4")
+  )
+  (text "Safety requirements captured here: mechanical main battery disconnect, visible power indication tied to VBAT_SW, protected battery terminals, and receiver/servo rail isolated from the WEKA logic-only BEC."
+    (at 15.00 108.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "ee831889-fe2e-5a36-bb40-194c701f5639")
+  )
+  (text "Growth constraints: optional MCU/PWM points are passive taps in Rev A; they must not drive receiver-owned PWM nets unless the harness is intentionally reworked. AUX_3V3 is switched off by the main link through VBAT_SW."
+    (at 15.00 120.00 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "e51f1d0d-8a69-5387-ae51-557df93f4b50")
+  )
+  (sheet_instances
+    (path "/c7076af1-9a31-5690-879f-805d8afe37e9/" (page "2"))
+  )
+)
