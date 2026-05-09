@@ -1,12 +1,12 @@
-### Footprint positions - created on 2026-05-09T00:43:29-0400 ###
+### Footprint positions - created on 2026-05-09T16:33:43-0400 ###
 ### Printed by KiCad version 9.0.7+dfsg-1
 ## Unit = inches, Angle = deg.
 ## Side : All
 # Ref     Val                           Package                                                PosX       PosY       Rot  Side
 C1        470uF_16V_LOW_ESR             CP_Elec_6.3x7.7                                      1.2992    -0.9449    0.0000  top
 C2        10uF_16V                      C_0805_2012Metric                                    1.6929    -1.1417    0.0000  top
-C10       10uF_3V3_LOCAL                C_0805_2012Metric                                    3.1496    -1.5748    0.0000  top
-C11       100nF_3V3_LOCAL               C_0805_2012Metric                                    3.3071    -1.5748    0.0000  top
+C10       10uF_3V3_LOCAL                C_0805_2012Metric                                    2.8346    -2.0472    0.0000  top
+C11       100nF_3V3_LOCAL               C_0805_2012Metric                                    2.9921    -2.0472    0.0000  top
 C20       1000uF_10V_SERVO              CP_Elec_6.3x7.7                                      1.2205    -1.6535    0.0000  top
 C21       100uF_10V                     CP_Elec_6.3x7.7                                      1.6929    -1.6535    0.0000  top
 C22       10uF_10V                      C_0805_2012Metric                                    2.0866    -1.6535    0.0000  top
@@ -23,7 +23,7 @@ FB1       RX_6V_FILTER                  R_0805_2012Metric                       
 J1        BATTERY_XT30                  AMASS_XT30UPB-F_1x02_P5.0mm_Vertical                 0.5118    -0.7480   90.0000  top
 J2        REMOVE_LINK_VBAT              PinHeader_1x02_P2.54mm_Vertical                      1.1024    -0.4724  -90.0000  top
 J10       MATEK_ELRS_R24_P6_PWM         PinHeader_1x08_P2.54mm_Vertical                      3.6220    -2.8346   90.0000  top
-J11       CRSF_UART                     JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal     4.2520    -2.7953  180.0000  top
+J11       CRSF_UART                     JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal     4.4882    -2.5197  180.0000  top
 J12       UART_PROGRAM                  PinHeader_1x06_P2.54mm_Vertical                      4.2913    -1.4567    0.0000  top
 J20       WEKA_POWER_XT30               AMASS_XT30UPB-F_1x02_P5.0mm_Vertical                 0.5118    -3.1496  -90.0000  top
 J21       WEKA_PWM                      PinHeader_1x04_P2.54mm_Vertical                      1.1811    -3.0709    0.0000  top
@@ -31,14 +31,14 @@ J30       PWM_WEAPON_FR_SERVO           PinHeader_1x03_P2.54mm_Vertical         
 J31       PWM_WEAPON_LR_SERVO           PinHeader_1x03_P2.54mm_Vertical                      1.8898    -3.4646  -90.0000  top
 J32       PWM_SERVO_SPARE1_SERVO        PinHeader_1x03_P2.54mm_Vertical                      2.4803    -3.1102  -90.0000  top
 J33       PWM_SERVO_SPARE2_SERVO        PinHeader_1x03_P2.54mm_Vertical                      2.4803    -3.4646  -90.0000  top
-J44       PIT_DEBUG                     PinHeader_1x06_P2.54mm_Vertical                      4.1732    -2.0472   90.0000  top
+J44       PIT_DEBUG                     PinHeader_1x06_P2.54mm_Vertical                      3.9370    -2.2835   90.0000  top
 J46       MCU_POWER_COMMS               PinHeader_1x06_P2.54mm_Vertical                      4.0551    -3.3858   90.0000  top
 J47       MCU_SIGNAL_TAPS               PinHeader_1x06_P2.54mm_Vertical                      3.1890    -3.3858   90.0000  top
 J48       MCU_SENSE_STATUS              PinHeader_1x06_P2.54mm_Vertical                      3.1890    -3.7008   90.0000  top
 J49       I2C_STEMMA_QT                 JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal     4.1339    -3.7008  180.0000  top
 R1        2.2k                          R_0805_2012Metric                                    1.9685    -0.3150    0.0000  top
-R10       10k_EN_PULLUP                 R_0805_2012Metric                                    3.1102    -1.3780    0.0000  top
-R11       10k_BOOT_PULLUP               R_0805_2012Metric                                    3.3071    -1.3780    0.0000  top
+R10       10k_EN_PULLUP                 R_0805_2012Metric                                    2.8346    -1.7323    0.0000  top
+R11       10k_BOOT_PULLUP               R_0805_2012Metric                                    2.6772    -1.8110    0.0000  top
 R40       100k                          R_0805_2012Metric                                    3.1102    -2.2047    0.0000  top
 R41       47k                           R_0805_2012Metric                                    3.3858    -2.2047    0.0000  top
 R42       100k                          R_0805_2012Metric                                    3.1102    -2.3622    0.0000  top
