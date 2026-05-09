@@ -1,0 +1,13 @@
+** Drc report for flipping-cool.kicad_pcb **
+** Created on 2026-05-08T23:39:10-0400 **
+
+** Found 1 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.8600 mm, 30.8600 mm): Segment of J22 on B.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

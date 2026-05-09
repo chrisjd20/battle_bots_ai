@@ -1,0 +1,116 @@
+** Drc report for flipping-cool.kicad_pcb **
+** Created on 2026-05-08T23:39:10-0400 **
+
+** Found 1 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.8600 mm, 30.8600 mm): Segment of J22 on B.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 46 Footprint errors **
+[missing_footprint]: Missing footprint F1 (MF-MSMF050_500mA_PTC)
+    Local override; warning
+[missing_footprint]: Missing footprint J40 (SPARE_SWITCHED_VBAT_OUT_FUSED)
+    Local override; warning
+[missing_footprint]: Missing footprint J41 (SPARE_6V_ACCESSORY)
+    Local override; warning
+[missing_footprint]: Missing footprint J42 (OPTIONAL_CRSF_UART_PADS)
+    Local override; warning
+[missing_footprint]: Missing footprint J43 (PWM_SPARE_BREAKOUT)
+    Local override; warning
+[missing_footprint]: Missing footprint J44 (PIT_DEBUG_POWER_COMMS)
+    Local override; warning
+[missing_footprint]: Missing footprint J45 (OPTIONAL_POLOLU_D24V5F3_3V3)
+    Local override; warning
+[missing_footprint]: Missing footprint J46 (FUTURE_MCU_POWER_COMMS)
+    Local override; warning
+[missing_footprint]: Missing footprint J47 (FUTURE_MCU_PWM_I2C_TAPS)
+    Local override; warning
+[missing_footprint]: Missing footprint J48 (FUTURE_MCU_ADC_LED)
+    Local override; warning
+[missing_footprint]: Missing footprint J49 (I2C_SENSOR_STEMMA_QT_QWIIC)
+    Local override; warning
+[missing_footprint]: Missing footprint J50 (COMMON_ANODE_RGB_STATUS_LED)
+    Local override; warning
+[missing_footprint]: Missing footprint R40 (100k_ADC_VBAT_HI)
+    Local override; warning
+[missing_footprint]: Missing footprint R41 (47k_ADC_VBAT_LO)
+    Local override; warning
+[missing_footprint]: Missing footprint R42 (100k_ADC_SERVO_HI)
+    Local override; warning
+[missing_footprint]: Missing footprint R43 (47k_ADC_SERVO_LO)
+    Local override; warning
+[missing_footprint]: Missing footprint R44 (100k_ADC_RX_HI)
+    Local override; warning
+[missing_footprint]: Missing footprint R45 (47k_ADC_RX_LO)
+    Local override; warning
+[missing_footprint]: Missing footprint R46 (4k7_DNP_I2C_SDA_PULLUP)
+    Local override; warning
+[missing_footprint]: Missing footprint R47 (4k7_DNP_I2C_SCL_PULLUP)
+    Local override; warning
+[missing_footprint]: Missing footprint R50 (330R_STATUS_RED)
+    Local override; warning
+[missing_footprint]: Missing footprint R51 (330R_STATUS_GREEN)
+    Local override; warning
+[missing_footprint]: Missing footprint R52 (330R_STATUS_BLUE)
+    Local override; warning
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(44.0000 mm, 20.0000 mm): Footprint TP1
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(66.0000 mm, 20.0000 mm): Footprint TP2
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(36.0000 mm, 84.0000 mm): Footprint TP3
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(100.0000 mm, 56.0000 mm): Footprint TP4
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(8.0000 mm, 70.0000 mm): Footprint TP5
+[missing_footprint]: Missing footprint TP6 (PWM_DRIVE_LEFT_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP7 (PWM_DRIVE_RIGHT_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP8 (PWM_WEAPON_FR_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP9 (PWM_WEAPON_LR_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP10 (BEC_EN_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP11 (BEC_PG_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP12 (CELL1_SENSE_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP13 (WEKA_5V_NC_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP14 (CRSF_TX_TP)
+    Local override; warning
+[missing_footprint]: Missing footprint TP15 (CRSF_RX_TP)
+    Local override; warning
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(82.0000 mm, 8.0000 mm): Footprint J22
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(110.0000 mm, 8.0000 mm): Footprint J5
+[missing_footprint]: Missing footprint J32 (SPARE_SERVO_PWM5)
+    Local override; warning
+[missing_footprint]: Missing footprint J33 (SPARE_SERVO_PWM6)
+    Local override; warning
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(132.0000 mm, 102.0000 mm): Footprint MH4
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(8.0000 mm, 102.0000 mm): Footprint MH3
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(8.0000 mm, 8.0000 mm): Footprint MH1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(132.0000 mm, 48.0000 mm): Footprint MH2
+
+** End of Report **
