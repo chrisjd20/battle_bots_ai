@@ -4,4 +4,5 @@
   (lib (name "Connector")(type "KiCad")(uri "/usr/share/kicad/symbols/Connector.kicad_sym")(options "")(descr "KiCad connector symbols"))
   (lib (name "Device")(type "KiCad")(uri "/usr/share/kicad/symbols/Device.kicad_sym")(options "")(descr "KiCad device symbols"))
   (lib (name "custom")(type "KiCad")(uri "${KIPRJMOD}/../../../shared/kicad-libraries/custom.kicad_sym")(options "")(descr "Battle bots custom module symbols"))
+  (lib (name "RF_Module")(type "KiCad")(uri "/usr/share/kicad/symbols/RF_Module.kicad_sym")(options "")(descr ""))
 )
